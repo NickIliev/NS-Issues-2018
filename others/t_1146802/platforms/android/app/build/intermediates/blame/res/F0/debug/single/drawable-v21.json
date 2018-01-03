@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/avd_show_password.xml",
+        "source": "/Users/niliev/.android/build-cache/803f9861788c406ef4a06f0ba9addad5e7609670/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/Users/niliev/.android/build-cache/803f9861788c406ef4a06f0ba9addad5e7609670/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/Users/niliev/.android/build-cache/803f9861788c406ef4a06f0ba9addad5e7609670/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-v21/design_password_eye.xml",
+        "source": "/Users/niliev/.android/build-cache/803f9861788c406ef4a06f0ba9addad5e7609670/output/res/drawable-v21/design_password_eye.xml"
+    }
+]

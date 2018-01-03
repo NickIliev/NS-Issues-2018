@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/niliev/.android/build-cache/44e269cefeda4fa4c18378ac4c13c2d491215875/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

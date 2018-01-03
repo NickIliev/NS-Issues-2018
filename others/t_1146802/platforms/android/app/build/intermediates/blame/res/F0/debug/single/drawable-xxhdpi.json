@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-xxhdpi/logo.png",
+        "source": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/src/main/res/drawable-xxhdpi/logo.png"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-xxhdpi/background.png",
+        "source": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/src/main/res/drawable-xxhdpi/background.png"
+    },
+    {
+        "merged": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-xxhdpi/icon.png",
+        "source": "/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/src/main/res/drawable-xxhdpi/icon.png"
+    }
+]

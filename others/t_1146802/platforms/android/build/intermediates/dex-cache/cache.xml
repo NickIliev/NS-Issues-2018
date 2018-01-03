@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/niliev/.android/build-cache/bfb1160985aa1cc7033b32253e824d448eba8dbf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="dd431d6aa9ce9dc0d429fcd239d412a82ea0e9a7">
+        <dex dex="/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_caa5ee844bf52ab18c262ac70e3cfe6d281d096f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/niliev/.android/build-cache/e9b7e2cf20e45be4c36104dfec1757bb1c879bab/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/Users/niliev/Desktop/git/NS-Issues-2018/others/t_1146802/platforms/android/app/build/intermediates/pre-dexed/F0/debug/classes_273c1e0cf545a42d7bdfc4b5dba202c0a1f715b6.jar" />
+    </item>
+
+</items>
