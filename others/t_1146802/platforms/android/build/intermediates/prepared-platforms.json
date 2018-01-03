@@ -1,7 +1,0 @@
-{
-    "nativescript-geolocation": true,
-    "nativescript-theme-core": true,
-    "tns-core-modules": true,
-    "nativescript-permissions": true,
-    "tns-core-modules-widgets": true
-}
