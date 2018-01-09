@@ -1,0 +1,6 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+
+    <StackLayout>
+        <WebView src="https://docs.nativescript.org" />
+    </StackLayout>
+</Page>
