@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("globals");
+var http = require("tns-core-modules/http");
+http.getString("https://httpbin.org/get").then(function (r) {
+    postMessage(r);
+}, function (e) {
+    throw e;
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaHR0cC1zdHJpbmctd29ya2VyLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaHR0cC1zdHJpbmctd29ya2VyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBQUEsT0FBTyxDQUFDLFNBQVMsQ0FBQyxDQUFDO0FBRW5CLDRDQUE4QztBQUk5QyxJQUFJLENBQUMsU0FBUyxDQUFDLHlCQUF5QixDQUFDLENBQUMsSUFBSSxDQUFDLFVBQUMsQ0FBQztJQUM3QyxXQUFXLENBQUMsQ0FBQyxDQUFDLENBQUM7QUFDbkIsQ0FBQyxFQUFFLFVBQUMsQ0FBQztJQUNELE1BQU0sQ0FBQyxDQUFDO0FBQ1osQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJyZXF1aXJlKFwiZ2xvYmFsc1wiKTtcclxuXHJcbmltcG9ydCAqIGFzIGh0dHAgZnJvbSBcInRucy1jb3JlLW1vZHVsZXMvaHR0cFwiO1xyXG5cclxuZGVjbGFyZSBsZXQgcG9zdE1lc3NhZ2U6IGFueTtcclxuXHJcbmh0dHAuZ2V0U3RyaW5nKFwiaHR0cHM6Ly9odHRwYmluLm9yZy9nZXRcIikudGhlbigocikgPT4ge1xyXG4gICAgcG9zdE1lc3NhZ2Uocik7XHJcbn0sIChlKSA9PiB7XHJcbiAgICB0aHJvdyBlO1xyXG59KTsiXX0=

@@ -1,15 +1,8 @@
 import { EventData } from 'data/observable';
 import { Page } from 'ui/page';
+
 import { WebView } from "ui/web-view";
-
 import * as fs from "file-system";
-
-export function navigatingTo(args: EventData) {
-
-    let page = <Page>args.object;
-
-
-}
 
 export function onWebViewLoaded(args) {
 

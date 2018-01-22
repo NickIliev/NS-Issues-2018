@@ -3,7 +3,7 @@
         <ng-template let-item="item">
             <GridLayout orientation="horizontal" columns="50, *" class="list-group-item">
                 <Image col="0" [src]="imageSource" decodeWidth="36" decodeHeight="36" ></Image>
-                <Label col="1" [nsRouterLink]="['/item', item.id]" [text]="item.name" ></Label>
+                <Label col="1" [nsRouterLink]="['/item', item.id]" [text]="item.name"  ></Label>
             </GridLayout>
         </ng-template>
     </ListView>

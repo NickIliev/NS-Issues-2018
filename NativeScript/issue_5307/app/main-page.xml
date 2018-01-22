@@ -3,6 +3,5 @@
 
     <StackLayout class="p-20">
         <Label text="Foreground actovuti issue 5307" class="h1 text-center"/>
-        
     </StackLayout>
 </Page>
