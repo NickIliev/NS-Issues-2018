@@ -3,7 +3,7 @@ var application = require("application");
 
 function onNavigatingTo(args) {
     console.log("============= onNavigatingTo =============");
-    console.log("foregroundActivity: " + application.android.foregroundActivity);
+    console.log("foregroundActivity: " + application.android.foregroundActivity); // undefined
     console.log("startActivity: " + application.android.startActivity);
 }
 exports.onNavigatingTo = onNavigatingTo;
