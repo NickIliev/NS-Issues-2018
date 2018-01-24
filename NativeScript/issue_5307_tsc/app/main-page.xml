@@ -1,0 +1,7 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatedTo="onNavigatedTo" loaded="onLoaded" navigatingTo="onNavigatingTo" class="page">
+
+    <StackLayout class="p-20">
+        <Label text="Activities" class="h1 text-center"/>
+    </StackLayout>
+</Page>
