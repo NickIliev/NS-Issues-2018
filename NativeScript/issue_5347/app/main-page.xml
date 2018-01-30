@@ -1,0 +1,17 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <StackLayout class="p-20">
+        <ListView items="{{ items }}">
+    <ListView.itemTemplate>
+        <StackLayout class="p15">
+            <Label text="{{ title }}" class="title" />
+            <!-- generate Binding error -->
+            <!-- <Label text="{{ $value['attr.name1'] }}" /> -->
+            <!-- valid access -->
+            <Label text="{{ ( $value['attr.name1'] ) }}" />
+        </StackLayout>
+    </ListView.itemTemplate>
+</ListView>
+    </StackLayout>
+</Page>
