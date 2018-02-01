@@ -1,0 +1,13 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <StackLayout>
+            <Button text="addItems" tap="addItems" />
+            <ListView loaded="onListLoaded">
+                <ListView.itemTemplate>
+                    <StackLayout>
+                        <Image src="{{ $value }}" stretch="none" />
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+    </StackLayout>
+</Page>
