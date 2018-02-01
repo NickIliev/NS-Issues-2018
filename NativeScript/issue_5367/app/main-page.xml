@@ -2,6 +2,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
 
     <GridLayout rows="*" columns="*" backgroundColor="gray">
-        <HtmlView html="{{ htmlString }}" />
+        <!-- <HtmlView height="400" html="{{ htmlString }}" /> -->
+        <WebView height="400" src="{{ htmlString }}" />
     </GridLayout>
 </Page>
