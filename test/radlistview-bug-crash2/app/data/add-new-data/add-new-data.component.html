@@ -1,0 +1,41 @@
+<ActionBar class="action-bar">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+    -->
+    <!-- <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton> -->
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Data"></Label>
+</ActionBar>
+
+
+
+<!--
+Use the tkMainContent directive to display the content of the page when you have an app drawer.
+-->
+
+
+
+<GridLayout orientation="vertical" rows="auto, *" tkExampleTitle tkToggleNavButton>
+    <Label text="Drag an item by the handle to reorder"></Label>
+
+    <RadListView (itemReordered)="onItemReordered($event)" [items]="dataItems" row="1" itemReorder="true" reorderMode="Drag">
+
+        <ng-template tkListItemTemplate let-item="item">
+            <GridLayout class="listItemGridLayout" columns="*, auto">
+                <StackLayout orientation="vertical" col="0" verticalAlignment="center">
+                    <Label class="nameLabel" [text]="item.name"></Label>
+                </StackLayout>
+                <ReorderHandle col="1" verticalAlignment="center">
+                    <!-- <Label row="0" col="0" class="h2 mdi color-def-theme-delete-text" text='&#xE25D;'></Label>      -->
+                    <Image src="res://icon"></Image>
+                </ReorderHandle>
+            </GridLayout>
+        </ng-template>
+
+    </RadListView>
+</GridLayout>

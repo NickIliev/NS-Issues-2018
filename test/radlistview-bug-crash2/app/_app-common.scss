@@ -1,0 +1,164 @@
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+// Font icon class
+.fa {
+    font-family: "FontAwesome";
+ }
+
+ .mdi {
+    font-family: "Material Icons", "MaterialIcons-Regular";
+  }
+
+ // Common page class
+ .page-content {
+     .page-placeholder {
+         color: $page-icon-color;
+         font-size: $page-content-placeholder-font-size;
+         vertical-align: center;
+         horizontal-align: center;
+     }
+ 
+     .page-icon {
+         font-size: 72;
+         vertical-align: top;
+         horizontal-align: center;
+         color: $page-icon-color;
+         margin-top: 20%;
+     }
+ }
+ 
+ //Action bar
+ ActionBar .action-bar-title {
+     horizontal-align: center;
+ }
+
+ .default-card-padding {
+     padding: 10;
+ }
+
+ //*************************  
+ // Material color scheme 
+ //*************************
+ $md-red: #F44336;
+ $md-pink: #E91E63;
+ $md-purple: #9C27B0;
+ $md-deeppurple: #673AB7;
+ $md-indigo: #3F51B5;
+ $md-blue: #2196F3;
+ $md-lightblue: #03A9F4;
+ $md-cyan: #00BCD4;
+ $md-teal: #009688;
+ $md-green: #4CAF50;
+ $md-lightgreen: #8BC34A;
+ $md-lime: #C0CA33;
+ $md-yellow: #FBC02D;
+ $md-amber: #FFC107;
+ $md-orange: #FF9800;
+ $md-deeporange: #FF5722;
+ $md-brown: #795548;
+ $md-grey: #9E9E9E;
+ $md-bluegrey: #607D8B;
+ $md-bluegrey-secondary: #455a64;
+ $md-white: #ffffff;
+ $md-black: #000000;
+
+ // Only text
+ .text-color-red { color: $md-red }
+ .text-color-pink { color: $md-pink }
+ .text-color-purple { color: $md-purple }
+ .text-color-deeppurple { color: $md-deeppurple }
+ .text-color-indigo { color: $md-indigo }
+ .text-color-blue { color: $md-blue }
+ .text-color-lightblue { color: $md-lightblue }
+ .text-color-cyan { color: $md-cyan }
+ .text-color-teal { color: $md-teal }
+ .text-color-green { color: $md-green }
+ .text-color-lightgreen { color: $md-lightgreen }
+ .text-color-lime { color: $md-lime }
+ .text-color-yellow { color: $md-yellow }
+ .text-color-amber { color: $md-amber }
+ .text-color-orange { color: $md-orange }
+ .text-color-deeporange { color: $md-deeporange }
+ .text-color-brown { color: $md-brown }
+ .text-color-grey { color: $md-grey }
+ .text-color-bluegrey { color: $md-bluegrey }
+ .text-color-bluegrey-secondary { color: $md-bluegrey-secondary }
+ .text-color-white { color: $md-white }
+ .text-color-black { color: $md-black }
+
+ // Only Background
+ .bg-color-red { background-color: $md-red }
+ .bg-color-pink { background-color: $md-pink }
+ .bg-color-purple { background-color: $md-purple }
+ .bg-color-deeppurple { background-color: $md-deeppurple }
+ .bg-color-indigo { background-color: $md-indigo }
+ .bg-color-blue { background-color: $md-blue }
+ .bg-color-lightblue { background-color: $md-lightblue }
+ .bg-color-cyan { background-color: $md-cyan }
+ .bg-color-teal { background-color: $md-teal }
+ .bg-color-green { background-color: $md-green }
+ .bg-color-lightgreen { background-color: $md-lightgreen }
+ .bg-color-lime { background-color: $md-lime }
+ .bg-color-yellow { background-color: $md-yellow }
+ .bg-color-amber { background-color: $md-amber }
+ .bg-color-orange { background-color: $md-orange }
+ .bg-color-deeporange { background-color: $md-deeporange }
+ .bg-color-brown { background-color: $md-brown }
+ .bg-color-grey { background-color: $md-grey }
+ .bg-color-bluegrey { background-color: $md-bluegrey }
+ .bg-color-bluegrey-secondary { background-color: $md-bluegrey-secondary }
+ .bg-color-white { background-color: $md-white }
+ .bg-color-black { background-color: $md-black }
+
+  // border only card themes
+ .card-theme-color-red { color: $md-red; }
+ .card-theme-color-pink { color: $md-pink; }
+ .card-theme-color-purple { color: $md-purple; }
+ .card-theme-color-indigo { color: $md-indigo; }
+ .card-theme-color-blue { color: $md-blue; }
+ .card-theme-color-lightblue { color: $md-lightblue; }
+ .card-theme-color-cyan { color: $md-cyan; }
+ .card-theme-color-teal { color: $md-teal; }
+ .card-theme-color-green { color: $md-green; }
+ .card-theme-color-lightgreen { color: $md-lightgreen; }
+ .card-theme-color-lime { color: $md-lime; }
+ .card-theme-color-yellow { color: $md-yellow; }
+ .card-theme-color-amber { color: $md-amber; }
+ .card-theme-color-orange { color: $md-orange; }
+ .card-theme-color-deeporange { color: $md-deeporange; }
+ .card-theme-color-brown { color: $md-brown; }
+
+ // Background themes with matching text color
+ .color-red { background-color: $md-red; color: $md-white; }
+ .color-pink { background-color: $md-pink; color: $md-white; }
+ .color-purple { background-color: $md-purple; color: $md-white; }
+ .color-deeppurple { background-color: $md-deeppurple; color: $md-white; }
+ .color-indigo { background-color: $md-indigo; color: $md-white; }
+ .color-blue { background-color: $md-blue; color: $md-black; }
+ .color-lightblue { background-color: $md-lightblue; color: $md-black; }
+ .color-cyan { background-color: $md-cyan; color: $md-black; }
+ .color-teal { background-color: $md-teal; color: $md-white; }
+ .color-green { background-color: $md-green; color: $md-black; }
+ .color-lightgreen { background-color: $md-lightgreen; color: $md-black; }
+ .color-lime { background-color: $md-lime; color: $md-black; }
+ .color-yellow { background-color: $md-yellow; color: $md-black; }
+ .color-amber { background-color: $md-amber; color: $md-black; }
+ .color-orange { background-color: $md-orange; color: $md-black; }
+ .color-deeporange { background-color: $md-deeporange; color: $md-black; }
+ .color-brown { background-color: $md-brown; color: $md-white; }
+ .color-grey { background-color: $md-grey; color: $md-black; }
+ .color-bluegrey { background-color: $md-bluegrey; color: $md-white; }
+
+ .color-def-theme-text {
+    color: $md-blue;
+ }
+
+ .color-def-theme-delete-text {
+    color: $md-red;
+ }
+
+
+ .modal-heading-label {
+    font-size: 48;
+    padding-bottom: 20;
+ }
