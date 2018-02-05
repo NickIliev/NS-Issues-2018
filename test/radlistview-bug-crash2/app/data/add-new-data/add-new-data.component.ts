@@ -5,7 +5,7 @@ import { ListViewEventData } from "nativescript-pro-ui/listview";
 
 const namesAndEmails = require("../NamesAndEmails.json");
 const posts = require("../posts.json");
-const listItems = require("../listItems.json");
+const listItems = require("../listitems.json");
 
 class DataItem {
   constructor(public id?: number, public name?: string, public description?: string, public title?: string, public text?: string, public image?: string, public selected?: boolean, public type?: string) {
@@ -100,10 +100,10 @@ export class DataItemService {
 
 @Component({
     moduleId: module.id,
-    selector: "tk-listview-item-reorder",
+    selector: "add-new-data",
     providers: [DataItemService],
-    templateUrl: "listview-item-reorder.component.html",
-    styleUrls: ["listview-item-reorder.component.css"]
+    templateUrl: "add-new-data.component.html",
+    styleUrls: ["add-new-data.component.css"]
 })
 // >> angular-listview-reorder-component
 export class AddNewDataComponent implements OnInit {
