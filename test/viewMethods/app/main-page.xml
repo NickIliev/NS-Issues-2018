@@ -1,0 +1,7 @@
+<Page navigatedTo="onNavigatedTo">
+    <StackLayout id="myStack" loaded="onStackLoaded" >
+        <Label text="Tap the button" />
+        <Button text="TAP" tap="{{ onTap }}" />
+        <Label id="myLabel" text="{{ message }}" />
+    </StackLayout>
+</Page>

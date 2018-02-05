@@ -1,19 +1,29 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Injectable, OnInit } from "@angular/core";
 import { ObservableArray } from "tns-core-modules/data/observable-array";
 
 import { ListViewEventData } from "nativescript-pro-ui/listview";
 
-import { Injectable } from '@angular/core';
-import { DATAITEMS } from "./mock-dataItems";
-import { DataItem } from "./dataItem";
-var namesAndEmails = require("../NamesAndEmails.json");
-var posts = require("../posts.json");
-var listItems = require("../listItems.json");
+const namesAndEmails = require("../NamesAndEmails.json");
+const posts = require("../posts.json");
+const listItems = require("../listItems.json");
 
-export class DataItem {
+class DataItem {
   constructor(public id?: number, public name?: string, public description?: string, public title?: string, public text?: string, public image?: string, public selected?: boolean, public type?: string) {
   }
 }
+
+const DATAITEMS: DataItem[] = [
+    { "id": 1, "name": "Item 1", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 2, "name": "Item 2", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 3, "name": "Item 3", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 4, "name": "Item 4", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 5, "name": "Item 5", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 6, "name": "Item 6", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 7, "name": "Item 7", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 8, "name": "Item 8", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 9, "name": "Item 9", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image", "selected": false },
+    { "id": 10, "name": "Item 10", "description": "This is item description.", "title": "This is item Title", "text": "This is item Text",  "image": "This is item Image" , "selected": false},
+]
 
 @Injectable()
 export class DataItemService {
@@ -96,7 +106,7 @@ export class DataItemService {
     styleUrls: ["listview-item-reorder.component.css"]
 })
 // >> angular-listview-reorder-component
-export class ListViewItemReorderComponent implements OnInit {
+export class AddNewDataComponent implements OnInit {
     private _dataItems: ObservableArray<DataItem>;
 
     constructor(private _dataItemService: DataItemService) {
