@@ -4,7 +4,7 @@
 		</ActionBar>
 	</Page.actionBar>
     <ScrollView>
-        	<StackLayout class="p-20" verticalAlignment="center">
+        	<StackLayout id="myStack" class="p-20" verticalAlignment="center">
                 <Label text="some label" class="h1 text-center" />
                 <TextField id="tf1" hint="some hint" class="h2 text-center" borderBottomWidth="2" borderBottomColor="blue" returnKeyType="next" returnPress="focusSecond"/>
                 <Label text="some label" class="h1 text-center" />

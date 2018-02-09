@@ -2,8 +2,12 @@ import { EventData } from 'tns-core-modules/data/observable';
 import { Page } from 'tns-core-modules/ui/page';
 import { TextField } from 'tns-core-modules/ui/text-field';
 import { HelloWorldModel } from './main-view-model';
+import { StackLayout } from "tns-core-modules/ui/layouts/stack-layout";
 
 let tf1, tf2, tf3, tf4: TextField;
+
+// COMMENT the keyboard manager and the content is no longer "pushable" when the keyboard appers and focus is moved
+const IQ_KEYBOARD = IQKeyboardManager.sharedManager(); 
 
 export function navigatingTo(args: EventData) {
 
