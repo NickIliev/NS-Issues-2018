@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+	<Page.actionBar>
+		<ActionBar title="My App" icon="" class="action-bar">
+		</ActionBar>
+	</Page.actionBar>
+    <ScrollView>
+        	<StackLayout class="p-20" verticalAlignment="center">
+                <Label text="some label" class="h1 text-center" />
+                <TextField id="tf1" hint="some hint" class="h2 text-center" borderBottomWidth="2" borderBottomColor="blue" returnKeyType="next" returnPress="focusSecond"/>
+                <Label text="some label" class="h1 text-center" />
+                <TextField id="tf2" hint="second hint" class="h2 text-center" borderBottomWidth="2" borderBottomColor="blue"  returnKeyType="next" returnPress="focusThird"/>
+                <Label text="some label" class="h1 text-center" />
+                <TextField id="tf3" hint="third hint" class="h2 text-center" borderBottomWidth="2" borderBottomColor="blue"  returnKeyType="next" returnPress="focusLast"/>
+                <Label text="some label" class="h1 text-center" />
+                <TextField id="tf4" hint="forth hint" class="h2 text-center" borderBottomWidth="2" borderBottomColor="blue"  returnKeyType="done"/>
+                <Label text="{{ message }}" class="h2 text-center" textWrap="true" />
+            </StackLayout>
+    </ScrollView>
+</Page>
