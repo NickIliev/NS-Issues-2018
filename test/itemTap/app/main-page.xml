@@ -1,0 +1,14 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <GridLayout rows="*" columns="*">
+        <ListView items="{{ items }}"  itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <StackLayout class="p-10" backgroundColor="gray">
+                    <Label text="{{ $value }}" textWrap="true" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+        
+    </GridLayout>
+</Page>
