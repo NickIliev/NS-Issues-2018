@@ -3,11 +3,6 @@ import { Page } from 'ui/page';
 
 import { request, HttpResponse } from "http";
 
-// Event handler for Page "navigatingTo" event attached in main-page.xml
-export function navigatingTo(args: EventData) {
-    let page = <Page>args.object;
-}
-
 export function makeRangeRequest() {
     console.log("makeRangeRequest")
 
@@ -23,8 +18,13 @@ export function makeRangeRequest() {
         console.dir(response.headers);
     
         let result = response.content.raw;
-        console.log("RESULT: " + result);
+        console.log("RESULT: " + result); // resulot will be bytes=500-1024
     }, (err) => {
         console.log("Error occurred " + err);
     });
+}
+
+// Event handler for Page "navigatingTo" event attached in main-page.xml
+export function navigatingTo(args: EventData) {
+    let page = <Page>args.object;
 }
