@@ -2,10 +2,11 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
     <StackLayout>
             <Button text="addItems" tap="addItems" />
-            <ListView loaded="onListLoaded">
+            <ListView loaded="onListLoaded" height="600">
                 <ListView.itemTemplate>
-                    <StackLayout>
-                        <Image src="{{ $value }}" stretch="none" />
+                    <StackLayout height="200" backgroundColor="gray">
+                        <Label text="image" textWrap="true" />
+                        <Image src="{{ $value }}" stretch="none" height="100" />
                     </StackLayout>
                 </ListView.itemTemplate>
             </ListView>

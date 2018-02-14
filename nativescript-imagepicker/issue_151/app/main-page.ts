@@ -20,6 +20,8 @@ export function addItems() {
         .then((selection) => {
             selection.forEach((selected) => {
                 // process the selected image
+                console.log(selected.uri);
+                console.log(selected.fileUri)
             });
             list.items = selection;
         }).catch((e) => {
