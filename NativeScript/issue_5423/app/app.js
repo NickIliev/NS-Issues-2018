@@ -1,0 +1,56 @@
+"use strict";
+/*
+In NativeScript, the app.ts file is the entry point to your application.
+You can use this file to perform app-level initialization, but the primary
+purpose of the file is to pass control to the app’s first module.
+*/
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./bundle-config");
+var application = require("application");
+var frame_1 = require("ui/frame");
+var Activity = (function (_super) {
+    __extends(Activity, _super);
+    function Activity() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    Activity.prototype.onUserInteraction = function () {
+        console.log("onUserInteraction overwritten from app.ts"); // OVERWRITTEN BEHAVIOUR
+    };
+    Activity.prototype.onCreate = function (savedInstanceState) {
+        if (!this._callbacks) {
+            frame_1.setActivityCallbacks(this);
+        }
+        this._callbacks.onCreate(this, savedInstanceState, _super.prototype.onCreate);
+    };
+    Activity.prototype.onSaveInstanceState = function (outState) {
+        this._callbacks.onSaveInstanceState(this, outState, _super.prototype.onSaveInstanceState);
+    };
+    Activity.prototype.onStart = function () {
+        this._callbacks.onStart(this, _super.prototype.onStart);
+    };
+    Activity.prototype.onStop = function () {
+        this._callbacks.onStop(this, _super.prototype.onStop);
+    };
+    Activity.prototype.onDestroy = function () {
+        this._callbacks.onDestroy(this, _super.prototype.onDestroy);
+    };
+    Activity.prototype.onBackPressed = function () {
+        this._callbacks.onBackPressed(this, _super.prototype.onBackPressed);
+    };
+    Activity.prototype.onRequestPermissionsResult = function (requestCode, permissions, grantResults) {
+        this._callbacks.onRequestPermissionsResult(this, requestCode, permissions, grantResults, undefined /*TODO: Enable if needed*/);
+    };
+    Activity.prototype.onActivityResult = function (requestCode, resultCode, data) {
+        this._callbacks.onActivityResult(this, requestCode, resultCode, data, _super.prototype.onActivityResult);
+    };
+    Activity = __decorate([
+        JavaProxy("com.tns.NativeScriptActivity")
+    ], Activity);
+    return Activity;
+}(android.app.Activity));
+application.start({ moduleName: 'main-page' });
+/*
+Do not place any code after the application has been started as it will not
+be executed on iOS.
+*/
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiYXBwLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQTs7OztFQUlFOztBQUVGLDJCQUF5QjtBQUN6Qix5Q0FBMkM7QUFFM0Msa0NBQXdFO0FBR3hFO0lBQXVCLDRCQUFvQjtJQUEzQzs7SUEwQ0EsQ0FBQztJQXZDVSxvQ0FBaUIsR0FBeEI7UUFDSSxPQUFPLENBQUMsR0FBRyxDQUFDLDJDQUEyQyxDQUFDLENBQUMsQ0FBQyx3QkFBd0I7SUFDdEYsQ0FBQztJQUVTLDJCQUFRLEdBQWxCLFVBQW1CLGtCQUFxQztRQUNwRCxFQUFFLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDO1lBQ25CLDRCQUFvQixDQUFDLElBQUksQ0FBQyxDQUFDO1FBQy9CLENBQUM7UUFFRCxJQUFJLENBQUMsVUFBVSxDQUFDLFFBQVEsQ0FBQyxJQUFJLEVBQUUsa0JBQWtCLEVBQUUsaUJBQU0sUUFBUSxDQUFDLENBQUM7SUFDdkUsQ0FBQztJQUVTLHNDQUFtQixHQUE3QixVQUE4QixRQUEyQjtRQUNyRCxJQUFJLENBQUMsVUFBVSxDQUFDLG1CQUFtQixDQUFDLElBQUksRUFBRSxRQUFRLEVBQUUsaUJBQU0sbUJBQW1CLENBQUMsQ0FBQztJQUNuRixDQUFDO0lBRVMsMEJBQU8sR0FBakI7UUFDSSxJQUFJLENBQUMsVUFBVSxDQUFDLE9BQU8sQ0FBQyxJQUFJLEVBQUUsaUJBQU0sT0FBTyxDQUFDLENBQUM7SUFDakQsQ0FBQztJQUVTLHlCQUFNLEdBQWhCO1FBQ0ksSUFBSSxDQUFDLFVBQVUsQ0FBQyxNQUFNLENBQUMsSUFBSSxFQUFFLGlCQUFNLE1BQU0sQ0FBQyxDQUFDO0lBQy9DLENBQUM7SUFFUyw0QkFBUyxHQUFuQjtRQUNJLElBQUksQ0FBQyxVQUFVLENBQUMsU0FBUyxDQUFDLElBQUksRUFBRSxpQkFBTSxTQUFTLENBQUMsQ0FBQztJQUNyRCxDQUFDO0lBRU0sZ0NBQWEsR0FBcEI7UUFDSSxJQUFJLENBQUMsVUFBVSxDQUFDLGFBQWEsQ0FBQyxJQUFJLEVBQUUsaUJBQU0sYUFBYSxDQUFDLENBQUM7SUFDN0QsQ0FBQztJQUVNLDZDQUEwQixHQUFqQyxVQUFrQyxXQUFtQixFQUFFLFdBQTBCLEVBQUUsWUFBMkI7UUFDMUcsSUFBSSxDQUFDLFVBQVUsQ0FBQywwQkFBMEIsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLFdBQVcsRUFBRSxZQUFZLEVBQUUsU0FBUyxDQUFDLDBCQUEwQixDQUFDLENBQUM7SUFDbkksQ0FBQztJQUVTLG1DQUFnQixHQUExQixVQUEyQixXQUFtQixFQUFFLFVBQWtCLEVBQUUsSUFBNEI7UUFDNUYsSUFBSSxDQUFDLFVBQVUsQ0FBQyxnQkFBZ0IsQ0FBQyxJQUFJLEVBQUUsV0FBVyxFQUFFLFVBQVUsRUFBRSxJQUFJLEVBQUUsaUJBQU0sZ0JBQWdCLENBQUMsQ0FBQztJQUNsRyxDQUFDO0lBekNDLFFBQVE7UUFEYixTQUFTLENBQUMsOEJBQThCLENBQUM7T0FDcEMsUUFBUSxDQTBDYjtJQUFELGVBQUM7Q0FBQSxBQTFDRCxDQUF1QixPQUFPLENBQUMsR0FBRyxDQUFDLFFBQVEsR0EwQzFDO0FBR0QsV0FBVyxDQUFDLEtBQUssQ0FBQyxFQUFFLFVBQVUsRUFBRSxXQUFXLEVBQUUsQ0FBQyxDQUFDO0FBRS9DOzs7RUFHRSIsInNvdXJjZXNDb250ZW50IjpbIi8qXG5JbiBOYXRpdmVTY3JpcHQsIHRoZSBhcHAudHMgZmlsZSBpcyB0aGUgZW50cnkgcG9pbnQgdG8geW91ciBhcHBsaWNhdGlvbi5cbllvdSBjYW4gdXNlIHRoaXMgZmlsZSB0byBwZXJmb3JtIGFwcC1sZXZlbCBpbml0aWFsaXphdGlvbiwgYnV0IHRoZSBwcmltYXJ5XG5wdXJwb3NlIG9mIHRoZSBmaWxlIGlzIHRvIHBhc3MgY29udHJvbCB0byB0aGUgYXBw4oCZcyBmaXJzdCBtb2R1bGUuXG4qL1xuXG5pbXBvcnQgXCIuL2J1bmRsZS1jb25maWdcIjtcbmltcG9ydCAqIGFzIGFwcGxpY2F0aW9uIGZyb20gJ2FwcGxpY2F0aW9uJztcblxuaW1wb3J0IHtzZXRBY3Rpdml0eUNhbGxiYWNrcywgQW5kcm9pZEFjdGl2aXR5Q2FsbGJhY2tzfSBmcm9tIFwidWkvZnJhbWVcIjtcblxuQEphdmFQcm94eShcImNvbS50bnMuTmF0aXZlU2NyaXB0QWN0aXZpdHlcIilcbmNsYXNzIEFjdGl2aXR5IGV4dGVuZHMgYW5kcm9pZC5hcHAuQWN0aXZpdHkge1xuICAgIHByaXZhdGUgX2NhbGxiYWNrczogQW5kcm9pZEFjdGl2aXR5Q2FsbGJhY2tzO1xuXG4gICAgcHVibGljIG9uVXNlckludGVyYWN0aW9uKCk6IHZvaWQge1xuICAgICAgICBjb25zb2xlLmxvZyhcIm9uVXNlckludGVyYWN0aW9uIG92ZXJ3cml0dGVuIGZyb20gYXBwLnRzXCIpOyAvLyBPVkVSV1JJVFRFTiBCRUhBVklPVVJcbiAgICB9XG5cbiAgICBwcm90ZWN0ZWQgb25DcmVhdGUoc2F2ZWRJbnN0YW5jZVN0YXRlOiBhbmRyb2lkLm9zLkJ1bmRsZSk6IHZvaWQge1xuICAgICAgICBpZiAoIXRoaXMuX2NhbGxiYWNrcykge1xuICAgICAgICAgICAgc2V0QWN0aXZpdHlDYWxsYmFja3ModGhpcyk7XG4gICAgICAgIH1cblxuICAgICAgICB0aGlzLl9jYWxsYmFja3Mub25DcmVhdGUodGhpcywgc2F2ZWRJbnN0YW5jZVN0YXRlLCBzdXBlci5vbkNyZWF0ZSk7XG4gICAgfVxuXG4gICAgcHJvdGVjdGVkIG9uU2F2ZUluc3RhbmNlU3RhdGUob3V0U3RhdGU6IGFuZHJvaWQub3MuQnVuZGxlKTogdm9pZCB7XG4gICAgICAgIHRoaXMuX2NhbGxiYWNrcy5vblNhdmVJbnN0YW5jZVN0YXRlKHRoaXMsIG91dFN0YXRlLCBzdXBlci5vblNhdmVJbnN0YW5jZVN0YXRlKTtcbiAgICB9XG5cbiAgICBwcm90ZWN0ZWQgb25TdGFydCgpOiB2b2lkIHtcbiAgICAgICAgdGhpcy5fY2FsbGJhY2tzLm9uU3RhcnQodGhpcywgc3VwZXIub25TdGFydCk7XG4gICAgfVxuXG4gICAgcHJvdGVjdGVkIG9uU3RvcCgpOiB2b2lkIHtcbiAgICAgICAgdGhpcy5fY2FsbGJhY2tzLm9uU3RvcCh0aGlzLCBzdXBlci5vblN0b3ApO1xuICAgIH1cblxuICAgIHByb3RlY3RlZCBvbkRlc3Ryb3koKTogdm9pZCB7XG4gICAgICAgIHRoaXMuX2NhbGxiYWNrcy5vbkRlc3Ryb3kodGhpcywgc3VwZXIub25EZXN0cm95KTtcbiAgICB9XG5cbiAgICBwdWJsaWMgb25CYWNrUHJlc3NlZCgpOiB2b2lkIHtcbiAgICAgICAgdGhpcy5fY2FsbGJhY2tzLm9uQmFja1ByZXNzZWQodGhpcywgc3VwZXIub25CYWNrUHJlc3NlZCk7XG4gICAgfVxuXG4gICAgcHVibGljIG9uUmVxdWVzdFBlcm1pc3Npb25zUmVzdWx0KHJlcXVlc3RDb2RlOiBudW1iZXIsIHBlcm1pc3Npb25zOiBBcnJheTxTdHJpbmc+LCBncmFudFJlc3VsdHM6IEFycmF5PG51bWJlcj4pOiB2b2lkIHtcbiAgICAgICAgdGhpcy5fY2FsbGJhY2tzLm9uUmVxdWVzdFBlcm1pc3Npb25zUmVzdWx0KHRoaXMsIHJlcXVlc3RDb2RlLCBwZXJtaXNzaW9ucywgZ3JhbnRSZXN1bHRzLCB1bmRlZmluZWQgLypUT0RPOiBFbmFibGUgaWYgbmVlZGVkKi8pO1xuICAgIH1cblxuICAgIHByb3RlY3RlZCBvbkFjdGl2aXR5UmVzdWx0KHJlcXVlc3RDb2RlOiBudW1iZXIsIHJlc3VsdENvZGU6IG51bWJlciwgZGF0YTogYW5kcm9pZC5jb250ZW50LkludGVudCk6IHZvaWQge1xuICAgICAgICB0aGlzLl9jYWxsYmFja3Mub25BY3Rpdml0eVJlc3VsdCh0aGlzLCByZXF1ZXN0Q29kZSwgcmVzdWx0Q29kZSwgZGF0YSwgc3VwZXIub25BY3Rpdml0eVJlc3VsdCk7XG4gICAgfVxufVxuXG5cbmFwcGxpY2F0aW9uLnN0YXJ0KHsgbW9kdWxlTmFtZTogJ21haW4tcGFnZScgfSk7XG5cbi8qXG5EbyBub3QgcGxhY2UgYW55IGNvZGUgYWZ0ZXIgdGhlIGFwcGxpY2F0aW9uIGhhcyBiZWVuIHN0YXJ0ZWQgYXMgaXQgd2lsbCBub3RcbmJlIGV4ZWN1dGVkIG9uIGlPUy5cbiovXG4iXX0=
