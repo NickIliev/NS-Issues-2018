@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:DrawingPad="nativescript-drawingpad"  navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+            <DrawingPad:DrawingPad height="400" id="drawingPad" penColor="#ff4081" penWidth="3"/>
+            <Button text="clearMyDrawing" tap="clearMyDrawing" />
+        </StackLayout>
+    </ScrollView>
+</Page>
