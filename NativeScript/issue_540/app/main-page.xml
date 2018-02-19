@@ -1,0 +1,14 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20" backgroundColor="lightgray" width="200" height="200" class="stack-border">
+        <Image src="res://logo" width="60" height="60" class="header-image" />
+        <Label text="some label" textWrap="true" />
+        <Image src="~/images/logo.png" width="60" height="60" stretch="aspectFill" class="image-border" />
+    </StackLayout>
+</Page>
