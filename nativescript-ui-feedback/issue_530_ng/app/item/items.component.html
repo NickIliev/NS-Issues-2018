@@ -1,0 +1,12 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <RadListView [items]="items" selectionBehavior="Press" multipleSelection="true" (itemSelected)="onItemSelected($event)" loadOnDemandMode="Auto" >
+        <ng-template tkListItemTemplate let-footballer="item" let-i="index">
+            <StackLayout orientation="vertical">
+                <Label [text]="footballer.name" class="p-10 m-10" fontSize="24" backgroundColor="gray" textWrap="true"></Label>
+            </StackLayout>
+        </ng-template>
+    </RadListView>
+</StackLayout>
