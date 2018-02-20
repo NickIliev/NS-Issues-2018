@@ -7,15 +7,15 @@
     </Page.actionBar>
 
     <GridLayout rows="*" columns="*">
-        <!-- <ListView items="{{ items }}" >
+        <ListView items="{{ items }}" >
             <ListView.itemTemplate>
-                <Button text="Button" tap="onTap" class="btn btn-primary btn-active"/>
+                <Button text="Button" tap="onTap" class="play"/>
             </ListView.itemTemplate>
-        </ListView> -->
-        <lv:RadListView items="{{ items }}" >
+        </ListView>
+        <!-- <lv:RadListView items="{{ items }}" >
             <lv:RadListView.itemTemplate>
                     <Button text="Button" tap="onTap" class="play"/>
             </lv:RadListView.itemTemplate>
-        </lv:RadListView>
+        </lv:RadListView> -->
     </GridLayout>
 </Page>
