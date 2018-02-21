@@ -1,0 +1,5 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" navigatingTo="onNavigatingTo">
+  <StackLayout backgroundColor="yellow">
+      <Label text="Second Frame - 2nd Pagw!" />
+  </StackLayout>
+</Page>

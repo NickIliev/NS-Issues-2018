@@ -1,0 +1,14 @@
+<GridLayout rows="auto, *, *" columns="*" loaded="onLoaded">
+    <StackLayout row="0">
+        <Button text="1st frame -1st page" tap="navToFirst" class="btn btn-primary btn-active" />
+        <Button text="1st frame -2ndt page" tap="navToSecond" class="btn btn-primary btn-active" />
+        <Button text="2nd frame -1st page" tap="navOnSecondFrameToFirst" class="btn btn-primary btn-active" />
+        <Button text="2nd frame -2nd page" tap="navOnSecondFramToSecond" class="btn btn-primary btn-active" />
+    </StackLayout>
+    <Frame row="1" id="navFrame" />
+    <Frame row="2" id="secondNavFrame" />
+</GridLayout>
+
+
+
+
