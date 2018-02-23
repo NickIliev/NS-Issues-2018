@@ -1,0 +1,16 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:ui="nativescript-radio" xmlns:CheckBox="nativescript-checkbox" navigatingTo="onNavigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <CheckBox:CheckBox text="CheckBox Label" checked="false" />
+        <ui:RadioGroup checkedChanged="onCheckedChanged">
+            <ui:RadioButton id="firstRadio" text="California" color="#000000" tint="#607d8b" backgroundColor="green" fontSize="20"/>
+            <ui:RadioButton id="secondRadio" checked="true" text="California2" color="#0000FF" tint="#607d8b" backgroundColor="green" fontSize="20" marginTop="20"/>
+        </ui:RadioGroup>
+    </StackLayout>
+</Page>
