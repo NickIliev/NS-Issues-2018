@@ -1,8 +1,8 @@
 var LocalNotifications = require("nativescript-local-notifications");
 var WS = require('nativescript-websockets');
 var mySocket;
-WebSocketClick();
-function WebSocketClick() {
+
+function schedule() {
     console.log("inside websocket.");
 
     mySocket = new WS("ws://echo.websocket.org", { protocols: [/* 'chat', 'video' */], timeout: 6000, allowCellular: true, headers: { 'Authorization': 'Basic ...' } });
@@ -31,20 +31,17 @@ function WebSocketClick() {
             }
         )
     });
-    
+
     mySocket.on('close', function (socket, code, reason) { console.log("Socket was closed because: ", reason, " code: ", code); });
     mySocket.on('error', function (socket, error) { console.log("Socket had an error", error); });
     mySocket.open();
 }
+
 exports.schedule = function () {
-    mySocket.send("hello");
+    mySocket.send("Hello!! Let's schedule!");
 }
 
-
-
-function onNavigatingTo(args) {
+exports.onLoaded = function(args) {
     var page = args.object;
-
+    schedule();
 }
-
-exports.onNavigatingTo = onNavigatingTo;

@@ -1,4 +1,4 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" onloaded="onNavigatingTo">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" onloaded="onLoaded">
     <StackLayout>
        
             <Button text="Schedule" tap="schedule" />
