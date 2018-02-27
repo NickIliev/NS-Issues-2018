@@ -1,0 +1,8 @@
+﻿.btn-cancel {
+    color: red;
+    background-color: green;
+}
+.btn-cancel:highlighted  {
+    color: #fff;
+    background-color: #8F8F8F;
+}
