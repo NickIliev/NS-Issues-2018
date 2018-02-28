@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// import * as radioModule from 'nativescript-radio';
+var page;
+// Event handler for Page "navigatingTo" event attached in main-page.xml
+function navigatingTo(args) {
+    page = args.object;
+}
+exports.navigatingTo = navigatingTo;
+// export function onCheckedChanged(args: EventData) {
+//     var group = args.object as radioModule.RadioGroup;
+//     var checked = group.checkedButton;
+//     var radioButton = group.android.findViewById(checked);
+//     console.log("Checked changed");
+// }
+// export function onChangeChecked(args: EventData) {
+//     var radio = page.getViewById("firstRadio") as radioModule.RadioButton;
+//     radio.checked = true;
+// } 
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi1wYWdlLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibWFpbi1wYWdlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBR0EscURBQXFEO0FBRXJELElBQUksSUFBVSxDQUFDO0FBRWYsd0VBQXdFO0FBQ3hFLHNCQUE2QixJQUFlO0lBQ3hDLElBQUksR0FBUyxJQUFJLENBQUMsTUFBTSxDQUFDO0FBQzdCLENBQUM7QUFGRCxvQ0FFQztBQUVELHNEQUFzRDtBQUN0RCx5REFBeUQ7QUFDekQseUNBQXlDO0FBQ3pDLDZEQUE2RDtBQUM3RCxzQ0FBc0M7QUFDdEMsSUFBSTtBQUVKLHFEQUFxRDtBQUNyRCw2RUFBNkU7QUFDN0UsNEJBQTRCO0FBQzVCLElBQUkiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBFdmVudERhdGEgfSBmcm9tICdkYXRhL29ic2VydmFibGUnO1xuaW1wb3J0IHsgUGFnZSB9IGZyb20gJ3VpL3BhZ2UnO1xuXG4vLyBpbXBvcnQgKiBhcyByYWRpb01vZHVsZSBmcm9tICduYXRpdmVzY3JpcHQtcmFkaW8nO1xuXG5sZXQgcGFnZTogUGFnZTtcblxuLy8gRXZlbnQgaGFuZGxlciBmb3IgUGFnZSBcIm5hdmlnYXRpbmdUb1wiIGV2ZW50IGF0dGFjaGVkIGluIG1haW4tcGFnZS54bWxcbmV4cG9ydCBmdW5jdGlvbiBuYXZpZ2F0aW5nVG8oYXJnczogRXZlbnREYXRhKSB7XG4gICAgcGFnZSA9IDxQYWdlPmFyZ3Mub2JqZWN0O1xufVxuXG4vLyBleHBvcnQgZnVuY3Rpb24gb25DaGVja2VkQ2hhbmdlZChhcmdzOiBFdmVudERhdGEpIHtcbi8vICAgICB2YXIgZ3JvdXAgPSBhcmdzLm9iamVjdCBhcyByYWRpb01vZHVsZS5SYWRpb0dyb3VwO1xuLy8gICAgIHZhciBjaGVja2VkID0gZ3JvdXAuY2hlY2tlZEJ1dHRvbjtcbi8vICAgICB2YXIgcmFkaW9CdXR0b24gPSBncm91cC5hbmRyb2lkLmZpbmRWaWV3QnlJZChjaGVja2VkKTtcbi8vICAgICBjb25zb2xlLmxvZyhcIkNoZWNrZWQgY2hhbmdlZFwiKTtcbi8vIH1cblxuLy8gZXhwb3J0IGZ1bmN0aW9uIG9uQ2hhbmdlQ2hlY2tlZChhcmdzOiBFdmVudERhdGEpIHtcbi8vICAgICB2YXIgcmFkaW8gPSBwYWdlLmdldFZpZXdCeUlkKFwiZmlyc3RSYWRpb1wiKSBhcyByYWRpb01vZHVsZS5SYWRpb0J1dHRvbjtcbi8vICAgICByYWRpby5jaGVja2VkID0gdHJ1ZTtcbi8vIH0iXX0=

@@ -13,14 +13,11 @@ export function onTfLoaded(args) {
 
     let nativeTF;
     if (isAndroid) {
-        let nativeTF = <android.widget.EditText>tf.nativeView; // on Android is android.widget.EditText 
-
+        let nativeTF = <android.widget.EditText>tf.nativeView; // on Android is android.widget.EditText
         nativeTF.setKeyListener(android.text.method.DigitsKeyListener.getInstance("zxc"));
     } else {
-        let nativeTF = <UITextField>tf.nativeView;// for iOS is UITextView
-
+        let nativeTF = <UITextField>tf.nativeView;// for iOS is UITextField
     }
-    console.log("editText: " + nativeTF);
 
 }
 

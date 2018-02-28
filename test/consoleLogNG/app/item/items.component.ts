@@ -3,6 +3,8 @@ import { EventData } from "data/observable";
 import { Item } from "./item";
 import { ItemService } from "./item.service";
 
+declare let android: any;
+
 @Component({
     selector: "ns-items",
     moduleId: module.id,
@@ -17,18 +19,20 @@ export class ItemsComponent implements OnInit {
 
     ngOnInit(): void {
         this.items = this.itemService.getItems();
+        console.log(this.items);
         // console.log("this.items");
         // console.log(this.items);
     }
 
-onStackLoaded(args: EventData) {
-    console.log("onStackLoaded");
-    console.log(args.object); // TypeError: Converting circular structure to JSON
-    console.log("" + args.object); // OK prinst the object
-    console.log(JSON.stringify(args)); // OK prinst the object
-    console.log("" + JSON.stringify(args)); // OK prinst the object
+    onStackLoaded(args: EventData) {
+        console.log("onStackLoaded");
+        console.log(args.object); // TypeError: Converting circular structure to JSON
+        // console.log("" + args.object); // OK prinst the object
+        console.log(args.eventName);
+        // console.log(JSON.stringify(args)); // OK prinst the object
+        // console.log("" + JSON.stringify(args)); // OK prinst the object
 
-    // console.log(args.eventName); // TypeError: Converting circular structure to JSON
-    // console.log("" + args.eventName); // OK prinst the object
-}
+        // console.log(args.eventName); // TypeError: Converting circular structure to JSON
+        // console.log("" + args.eventName); // OK prinst the object
+    }
 }

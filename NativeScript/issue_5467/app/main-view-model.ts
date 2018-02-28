@@ -13,11 +13,11 @@ export class HelloWorldModel extends Observable {
         this.updateMessage();
     }
 
-    get message(): string {
+    get message(): any {
         return this._message;
     }
     
-    set message(value: string) {
+    set message(value: any) {
         if (this._message !== value) {
             this._message = value;
             this.notifyPropertyChange('message', value)

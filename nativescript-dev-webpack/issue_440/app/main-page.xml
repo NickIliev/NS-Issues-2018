@@ -1,6 +1,7 @@
 <Page
     xmlns="http://schemas.nativescript.org/tns.xsd"
-    xmlns:Gradient="nativescript-gradient" loaded="pageLoaded">
+    xmlns:Gradient="nativescript-gradient" 
+    loaded="pageLoaded">
  
     <GridLayout rows="*" columns="*">
         <Gradient:Gradient direction="to right" colors="#FF0077, red, #FF00FF">

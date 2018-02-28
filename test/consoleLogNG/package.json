@@ -6,7 +6,7 @@
 	"nativescript": {
 		"id": "org.nativescript.consoleLogNG",
 		"tns-android": {
-			"version": "3.4.1-2018-02-22-01"
+			"version": "3.4.1"
 		}
 	},
 	"dependencies": {
