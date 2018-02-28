@@ -25,7 +25,7 @@ export function onAdd() {
 
 export function createNewCheckBox() {
     // <CheckBox:CheckBox checked="{{ checkProp }}" text="{{ myCheckText }}" fillColor="{{ myCheckColor }}" id="myCheckbox" />
-    let checkBox : any = new CheckBox();
+    let checkBox: any = new CheckBox();
     checkBox.checked = true;
     checkBox.text = "New CheckBox";
     checkBox.fillColor = "orange";
