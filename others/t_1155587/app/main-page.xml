@@ -1,5 +1,5 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" 
-
+      xmlns:ui="nativescript-radio"
       navigatingTo="navigatingTo" 
       class="page">
     <Page.actionBar>
@@ -7,11 +7,7 @@
         </ActionBar>
     </Page.actionBar>
 
-    <StackLayout class="p-20">
-        <!-- <ui:RadioGroup checkedChanged="onCheckedChanged">
-            <ui:RadioButton id="firstRadio" text="California" color="#000000" tint="#607d8b" backgroundColor="green" fontSize="20"/>
-            <ui:RadioButton id="secondRadio" checked="true" text="California2" color="#0000FF" tint="#607d8b" backgroundColor="green" fontSize="20" marginTop="20"/>
-        </ui:RadioGroup> -->
-        <Button text="Change checked" tap="onChangeChecked" />
+    <StackLayout id="container" class="p-20">
+        <Button text="Tap the button to add RadioGroup" tap="onAddRadioGroup" />
     </StackLayout>
 </Page>
