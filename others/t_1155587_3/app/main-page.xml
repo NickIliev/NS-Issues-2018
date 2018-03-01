@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:CheckBox="nativescript-checkbox" navigatingTo="onNavigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20" id="myContainer" height="500">
+        <CheckBox:CheckBox checked="true" id="firstCheckBox" />
+        <CheckBox:CheckBox checked="false" id="secondCheckBox" />
+        <Button text="ClickMe" tap="callMeFunc"></Button>
+        <Label text="{{ 'firstCheckBox value: ' + firstValue }}" textWrap="true" />
+        <Label text="{{ 'secondCheckBox value: ' + secondValue }}" textWrap="true" />
+    </StackLayout>
+</Page>
