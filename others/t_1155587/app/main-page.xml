@@ -8,6 +8,11 @@
     </Page.actionBar>
 
     <StackLayout id="container" class="p-20">
+        <Button text="check radio buttons" tap="onCheckRadioButtons" />
+        <ui:RadioGroup checkedChanged="onCheckedChanged">
+            <ui:RadioButton id="firstRadio" text="California" color="#000000" tint="#607d8b" backgroundColor="green" fontSize="20"/>
+            <ui:RadioButton id="secondRadio" checked="true" text="California2" color="#0000FF" tint="#607d8b" backgroundColor="green" fontSize="20" marginTop="20"/>
+        </ui:RadioGroup>
         <Button text="Tap the button to add RadioGroup" tap="onAddRadioGroup" />
     </StackLayout>
 </Page>

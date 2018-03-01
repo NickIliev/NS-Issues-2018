@@ -15,6 +15,13 @@ export function navigatingTo(args: EventData) {
     stack = page.getViewById("container");
 }
 
+export function onCheckRadioButtons() {
+    let firstRadio: RadioButton = page.getViewById("firstRadio");
+    let secondRadio: RadioButton = page.getViewById("secondRadio");
+    
+    console.log("firstRadio: " + firstRadio.checked);
+    console.log("secondRadio: " + secondRadio.checked);
+}
 
 export function onAddRadioGroup(args: EventData) {
     let newGroup = createRadioGroup();
