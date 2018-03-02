@@ -11,7 +11,7 @@
             <Label text="Some Stack Laberl" textAlignment="center" verticalAlignment="middle" textWrap="true" />
         </StackLayout>
 
-        <GridLayout  row="1" columns="*, *, *" rows="*, *, *, *" backgroundColor="pink" borderWidth="10">
+        <GridLayout  row="1" columns="*, *, *" rows="*, *, *, *" backgroundColor="pink" borderTopWidth="5" borderColor="violet">
 
             <Image row="0" col="0" colSpan="3" src="res://icon" stretch="aspectFill" />
     
