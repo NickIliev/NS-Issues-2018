@@ -1,0 +1,43 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+<GridLayout rows="2*, *" columns="*" color="white">
+        <StackLayout row="0" backgroundColor="limegreen" borderWidth="10" borderColor="gray">
+            <Label text="Some Stack Laberl" textAlignment="center" verticalAlignment="middle" textWrap="true" />
+        </StackLayout>
+
+        <GridLayout  row="1" columns="*, *, *" rows="*, *, *, *" backgroundColor="pink" borderWidth="10">
+
+            <Image row="0" col="0" colSpan="3" src="res://icon" stretch="aspectFill" />
+    
+            <StackLayout row="1" col="0" backgroundColor="gray" >
+                <Label text="row 1 col 0" />
+            </StackLayout>
+            <StackLayout row="1" col="1" backgroundColor="blue" >
+                <Label text="row 1 col 1"/>
+            </StackLayout>
+            <StackLayout row="1" col="2" backgroundColor="black" >
+                <Label text="row 1 col 2" />
+            </StackLayout>
+            <StackLayout row="2" col="0" backgroundColor="yellow" >
+                <Label text="row 2 col 0" />
+            </StackLayout>
+            <StackLayout row="2" col="1" backgroundColor="orange" >
+                <Label text="row 2 col 1" />
+            </StackLayout>
+            <StackLayout row="2" col="2" backgroundColor="red" >
+                <Label text="row 2 col 2" />
+            </StackLayout>
+
+            <GridLayout row="3" col="0" colSpan="3" rows="*" columns="*" backgroundColor="orangered" >
+                <Label text="row 3 col 0 colSpan 3" textWrap="true" />
+            </GridLayout>
+
+        </GridLayout>
+</GridLayout>
+</Page>
