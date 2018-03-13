@@ -1,0 +1,26 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <!--
+    The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
+    http://docs.nativescript.org/ui/action-bar
+    -->
+
+        <ActionBar title="My App" icon="" class="action-bar">
+
+                <ActionItem tap="onShare"
+                    ios.systemIcon="9" ios.position="left"
+                    android.systemIcon="ic_menu_share" 
+                    android.position="actionBar"></ActionItem>
+                <ActionItem tap="onDelete"
+                    ios.systemIcon="16" ios.position="right"
+                    text="delete" android.position="popup"></ActionItem>
+
+        </ActionBar>
+
+
+    <StackLayout class="p-20">
+        <Label text="Tap the button" class="h1 text-center"/>
+        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>
