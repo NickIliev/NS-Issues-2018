@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profiling</title>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.trace {
+    position: absolute;
+    border: 1px solid black;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #DDD;
+    cursor: default;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.trace.Modules {
+    background-color: #BFF;
+}
+.trace.Runtime {
+    background-color: #FFB;
+}
+.trace:hover {
+    background-color: #FFF;
+    border-color: orange;
+    z-index: 1;
+    box-shadow: 0px 1px 5px black;
+}
+</style>
+</head>
+<body>
+  <script>
+var timeline = [{"domain":"Runtime","name":"Extracting assets","from":1520934664091,"to":1520934664179},{"domain":"Runtime","name":"Runtime.init","from":1520934664183,"to":1520934664211},{"domain":"Runtime","name":"LoadModule /data/data/org.nativescript.baseTscApp/files/app/tns-java-classes.js","from":1520934664216.089,"to":1520934664322.022},{"domain":"Runtime","name":"RequireCallback /data/data/org.nativescript.baseTscApp/files/app/tns-java-classes.js","from":1520934664215.717,"to":1520934664322.116},{"domain":"Runtime","name":"Load","from":1520934664212.628,"to":1520934664322.143},{"domain":"Runtime","name":"RuntimeHelper.initRuntime","from":1520934664082,"to":1520934664322},{"domain":"Runtime","name":"Runtime.run","from":1520934664322,"to":1520934664338},{"domain":"Runtime","name":"NaitveScriptApplication.onCreate","from":1520934664082,"to":1520934664338},{"domain":"Runtime","name":"Materizlizing class: android/content/Intent","from":1520934664522.89,"to":1520934664555.408},{"domain":"Modules","name":"e.notifyLaunch [object Object]","from":1520934664555,"to":1520934664557},{"domain":"Modules","name":"setThemeOnLaunch [object Object]","from":1520934664561,"to":1520934664612},{"domain":"Modules","name":"notifyActivityCreated [object Object]","from":1520934664613,"to":1520934664613},{"domain":"Runtime","name":"MarkReachableObjects: com.tns.gen.android.content.ComponentCallbacks2","from":1520934664767.304,"to":1520934664806.863},{"domain":"Runtime","name":"Materizlizing class: android/view/View","from":1520934664725.697,"to":1520934664818.712},{"domain":"Runtime","name":"Materizlizing class: android/view/ViewGroup","from":1520934664725.673,"to":1520934664823.028},{"domain":"Runtime","name":"Materizlizing class: android/widget/FrameLayout","from":1520934664725.644,"to":1520934664823.525},{"domain":"Runtime","name":"Materizlizing class: com/android/internal/policy/DecorView","from":1520934664725.538,"to":1520934664824.413},{"domain":"Modules","name":"subscribeForGlobalLayout [object Object]","from":1520934664614,"to":1520934664828},{"domain":"Modules","name":"onActivityCreated com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520934664561,"to":1520934664828},{"domain":"Modules","name":"t._setupUI t(1)","from":1520934664829,"to":1520934664836},{"domain":"Modules","name":"loadPageModule [object Object]","from":1520934664844,"to":1520934664846},{"domain":"Modules","name":"t.readTextSync [object Object]","from":1520934664862,"to":1520934664866},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664876,"to":1520934664879},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664879,"to":1520934664880},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664880,"to":1520934664883},{"domain":"Modules","name":"t._addView Page(2)","from":1520934664887,"to":1520934664889},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664883,"to":1520934664890},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664875,"to":1520934664890},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664893,"to":1520934664894},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664894,"to":1520934664894},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664894,"to":1520934664894},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664894,"to":1520934664895},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664893,"to":1520934664895},{"domain":"Modules","name":"t._addView Page(2)@file:///app/main-page.xml:1:1;","from":1520934664897,"to":1520934664897},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664898,"to":1520934664901},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664901,"to":1520934664901},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664902,"to":1520934664902},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664902,"to":1520934664902},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664898,"to":1520934664902},{"domain":"Modules","name":"t._addView Page(2)@file:///app/main-page.xml:1:1;","from":1520934664903,"to":1520934664903},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664904,"to":1520934664916},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664916,"to":1520934664916},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664916,"to":1520934664916},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664916,"to":1520934664916},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664903,"to":1520934664917},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934664917,"to":1520934664917},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664918,"to":1520934664921},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664921,"to":1520934664921},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664921,"to":1520934664921},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664922,"to":1520934664929},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664918,"to":1520934664929},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934664929,"to":1520934664930},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520934664930,"to":1520934664930},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520934664930,"to":1520934664930},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520934664930,"to":1520934664930},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520934664930,"to":1520934664933},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520934664930,"to":1520934664933},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934664933,"to":1520934664933},{"domain":"Modules","name":"pageFromBuilder [object Object]","from":1520934664846,"to":1520934664934},{"domain":"Modules","name":"resolvePageFromEntry [object Object]","from":1520934664838,"to":1520934664934},{"domain":"Modules","name":"e.onCreate [object Object]","from":1520934664522,"to":1520934664934},{"domain":"Modules","name":"initImageCache [object Object]","from":1520934664936,"to":1520934664952},{"domain":"Modules","name":"onActivityStarted com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520934664936,"to":1520934664952},{"domain":"Modules","name":"e.updateMatch t(1)._cssState","from":1520934664953,"to":1520934664953},{"domain":"Modules","name":"e.updateDynamicState t(1)._cssState","from":1520934664954,"to":1520934664956},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934664956,"to":1520934664956},{"domain":"Modules","name":"t.onLoaded t(1)","from":1520934664953,"to":1520934664957},{"domain":"Modules","name":"View.onLoaded t(1)","from":1520934664953,"to":1520934664957},{"domain":"Modules","name":"t.onNavigatingTo Page(2)@file:///app/main-page.xml:1:1;","from":1520934664963,"to":1520934664972},{"domain":"Modules","name":"t._navigateCore t(1)","from":1520934664972,"to":1520934665022},{"domain":"Modules","name":"r.performNavigation t(1)","from":1520934664963,"to":1520934665023},{"domain":"Modules","name":"r.onLoaded t(1)","from":1520934664953,"to":1520934665023},{"domain":"Modules","name":"e.onStart [object Object]","from":1520934664935,"to":1520934665023},{"domain":"Modules","name":"e.onCreate [object Object]","from":1520934665023,"to":1520934665024},{"domain":"Modules","name":"Label.createNativeView Label(6)@file:///app/main-page.xml:8:9;","from":1520934665047,"to":1520934665058},{"domain":"Modules","name":"t._setupUI Label(6)@file:///app/main-page.xml:8:9;","from":1520934665047,"to":1520934665065},{"domain":"Modules","name":"Button.createNativeView Button(7)@file:///app/main-page.xml:9:9;","from":1520934665065,"to":1520934665069},{"domain":"Modules","name":"t._setupUI Button(7)@file:///app/main-page.xml:9:9;","from":1520934665065,"to":1520934665074},{"domain":"Modules","name":"Label.createNativeView Label(8)@file:///app/main-page.xml:10:9;","from":1520934665074,"to":1520934665075},{"domain":"Modules","name":"t._setupUI Label(8)@file:///app/main-page.xml:10:9;","from":1520934665074,"to":1520934665078},{"domain":"Modules","name":"t._setupUI StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934665034,"to":1520934665078},{"domain":"Runtime","name":"ClassConstructorCallback","from":1520934665086.504,"to":1520934665110.957},{"domain":"Modules","name":"t._setupUI ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520934665078,"to":1520934665115},{"domain":"Modules","name":"t._setupUI Page(2)@file:///app/main-page.xml:1:1;","from":1520934665026,"to":1520934665115},{"domain":"Modules","name":"e._createSelectors [object Object]","from":1520934665116,"to":1520934665126},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665116,"to":1520934665130},{"domain":"Modules","name":"e.updateMatch Page(2)@file:///app/main-page.xml:1:1;._cssState","from":1520934665116,"to":1520934665130},{"domain":"Modules","name":"e.updateDynamicState Page(2)@file:///app/main-page.xml:1:1;._cssState","from":1520934665131,"to":1520934665134},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665134,"to":1520934665144},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665144,"to":1520934665144},{"domain":"Modules","name":"e.updateMatch StackLayout(5)@file:///app/main-page.xml:7:5;._cssState","from":1520934665144,"to":1520934665144},{"domain":"Modules","name":"e.updateDynamicState StackLayout(5)@file:///app/main-page.xml:7:5;._cssState","from":1520934665145,"to":1520934665148},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665148,"to":1520934665151},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665151,"to":1520934665153},{"domain":"Modules","name":"e.updateMatch Label(6)@file:///app/main-page.xml:8:9;._cssState","from":1520934665151,"to":1520934665154},{"domain":"Modules","name":"e.updateDynamicState Label(6)@file:///app/main-page.xml:8:9;._cssState","from":1520934665154,"to":1520934665157},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665157,"to":1520934665172},{"domain":"Modules","name":"t.onLoaded Label(6)@file:///app/main-page.xml:8:9;","from":1520934665151,"to":1520934665173},{"domain":"Modules","name":"View.onLoaded Label(6)@file:///app/main-page.xml:8:9;","from":1520934665151,"to":1520934665173},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665173,"to":1520934665175},{"domain":"Modules","name":"e.updateMatch Button(7)@file:///app/main-page.xml:9:9;._cssState","from":1520934665173,"to":1520934665175},{"domain":"Modules","name":"e.updateDynamicState Button(7)@file:///app/main-page.xml:9:9;._cssState","from":1520934665180,"to":1520934665186},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665186,"to":1520934665210},{"domain":"Modules","name":"t.onLoaded Button(7)@file:///app/main-page.xml:9:9;","from":1520934665173,"to":1520934665211},{"domain":"Modules","name":"View.onLoaded Button(7)@file:///app/main-page.xml:9:9;","from":1520934665173,"to":1520934665211},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665212,"to":1520934665212},{"domain":"Modules","name":"e.updateMatch Label(8)@file:///app/main-page.xml:10:9;._cssState","from":1520934665211,"to":1520934665212},{"domain":"Modules","name":"e.updateDynamicState Label(8)@file:///app/main-page.xml:10:9;._cssState","from":1520934665212,"to":1520934665213},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665213,"to":1520934665215},{"domain":"Modules","name":"t.onLoaded Label(8)@file:///app/main-page.xml:10:9;","from":1520934665211,"to":1520934665216},{"domain":"Modules","name":"View.onLoaded Label(8)@file:///app/main-page.xml:10:9;","from":1520934665211,"to":1520934665216},{"domain":"Modules","name":"t.onLoaded StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934665144,"to":1520934665216},{"domain":"Modules","name":"View.onLoaded StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520934665144,"to":1520934665216},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520934665217,"to":1520934665217},{"domain":"Modules","name":"e.updateMatch ActionBar(4)@file:///app/main-page.xml:3:9;._cssState","from":1520934665217,"to":1520934665217},{"domain":"Modules","name":"e.updateDynamicState ActionBar(4)@file:///app/main-page.xml:3:9;._cssState","from":1520934665217,"to":1520934665218},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520934665218,"to":1520934665227},{"domain":"Modules","name":"t.onLoaded ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520934665216,"to":1520934665228},{"domain":"Modules","name":"View.onLoaded ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520934665216,"to":1520934665228},{"domain":"Modules","name":"t.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520934665116,"to":1520934665241},{"domain":"Modules","name":"View.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520934665116,"to":1520934665242},{"domain":"Modules","name":"Page.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520934665116,"to":1520934665242},{"domain":"Modules","name":"t._addView t(1)","from":1520934665026,"to":1520934665242},{"domain":"Modules","name":"e.onCreateView [object Object]","from":1520934665026,"to":1520934665242},{"domain":"Modules","name":"e.onCreateAnimator [object Object]","from":1520934665243,"to":1520934665243},{"domain":"Modules","name":"onActivityResumed com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520934665251,"to":1520934665251},{"domain":"Modules","name":"Displayed in 1356.00ms","from":1520934663992,"to":1520934665348},{"domain":"Modules","name":"t.onNavigatedTo Page(2)@file:///app/main-page.xml:1:1;","from":1520934665586,"to":1520934665586},{"from":1520934663992,"to":1520934665586,"name":"ALL"}];
+var background = document.createElement('canvas');
+var context = background.getContext("2d");
+var rulerBackgroundPattern = document.createElement('canvas');
+var rulerBackgroundPatternContext = rulerBackgroundPattern.getContext("2d");
+var timelineBackgroundPattern = document.createElement('canvas');
+var timelineBackgroundPatternContext = timelineBackgroundPattern.getContext("2d");
+var chart = document.createElement('div');
+chart.id = "chart";
+chart.appendChild(background);
+var tracesDiv = document.createElement('div');
+tracesDiv.id = "traces";
+chart.appendChild(tracesDiv);
+document.body.appendChild(chart);
+function createStackTraces(traces) {
+    traces = traces.slice(0).sort(function (a, b) {
+        if (a.from < b.from) {
+            return -1;
+        }
+        else if (a.from === b.from) {
+            if (a.to > b.to) {
+                return -1;
+            }
+            else if (a.to === b.to) {
+                return 0;
+            }
+            else {
+                return 1;
+            }
+        }
+        else {
+            return 1;
+        }
+    });
+    var traceAtDepth = [];
+    var stackedTraces = traces.map(function (original) {
+        var from = original.from, to = original.to, name = original.name, domain = original.domain;
+        var trace = { from: from, to: to };
+        var depth;
+        for (var i = 0; i <= traceAtDepth.length; i++) {
+            if (traceAtDepth[i] === undefined || traceAtDepth[i].to <= from) {
+                depth = i;
+                traceAtDepth[i] = trace;
+                break;
+            }
+        }
+        var parent;
+        for (var i = depth - 1; i >= 0; i--) {
+            var potentialParent = traceAtDepth[i];
+            if (potentialParent.from <= trace.from && potentialParent.to >= trace.to) {
+                trace.parent = parent = potentialParent;
+                break;
+            }
+        }
+        var importance;
+        if (parent) {
+            // If it is very big, or very small - it does not matter, if it is about half its parent then it is important.
+            var ratio = (trace.to - trace.from) / (parent.to - parent.from);
+            importance = depth <= 1 ? 1 : 0.5 - Math.cos(2 * Math.PI * ratio) * 0.5;
+        }
+        else {
+            importance = 1;
+        }
+        var innerText = name + " " + Math.round(to - from) + "ms";
+        var title = name + " " + (to - from) + "ms " + importance;
+        var visible = false;
+        var div = document.createElement('div');
+        div.className = "trace " + domain;
+        tracesDiv.appendChild(div);
+        div.title = title;
+        div.innerText = innerText;
+        div.style.visibility = "hidden";
+        div.style.top = 30 + depth * 21 + "px";
+        div.addEventListener("click", focusTrace);
+        Object.assign(trace, { from: from, to: to, name: name, domain: domain, depth: depth, innerText: innerText, title: title, div: div, visible: visible, leftPx: 0, rightPx: 0, parent: parent, importance: importance });
+        div.trace = trace;
+        return trace;
+    }).sort(function (a, b) { return b.importance - a.importance; });
+    return stackedTraces;
+}
+var stackTraces = createStackTraces(timeline);
+var visibleStackTraces = new Set();
+var min = stackTraces.reduce(function (min, trace) { return Math.min(min, trace.from); }, Number.POSITIVE_INFINITY);
+var max = stackTraces.reduce(function (max, trace) { return Math.max(max, trace.to); }, Number.NEGATIVE_INFINITY);
+var left = min;
+var pixelPerMs = 0.0000001;
+var levelOfDetail = 0 /* High */;
+var debounceLODTimeout;
+function highLOD() {
+    if (debounceLODTimeout) {
+        clearTimeout(debounceLODTimeout);
+    }
+    levelOfDetail = 0 /* High */;
+    tracesDiv.style.pointerEvents = "auto";
+    updateStackTraces();
+}
+function lowLOD() {
+    levelOfDetail = 1 /* Low */;
+    if (debounceLODTimeout) {
+        clearTimeout(debounceLODTimeout);
+    }
+    debounceLODTimeout = setTimeout(highLOD, 1000);
+    tracesDiv.style.pointerEvents = "none";
+}
+function updateStackTraces() {
+    var windowWidth = window.innerWidth;
+    var right = left + (windowWidth / pixelPerMs);
+    var nextVisible = new Set();
+    var showTraces = levelOfDetail === 1 /* Low */ ? 64 : 512;
+    for (var i = 0; i < stackTraces.length && nextVisible.size < showTraces; i++) {
+        var trace = stackTraces[i];
+        trace.leftPx = (trace.from - left) * pixelPerMs;
+        trace.rightPx = (trace.to - left) * pixelPerMs;
+        if (trace.rightPx >= 0 && trace.leftPx <= windowWidth && (trace.rightPx - trace.leftPx >= 2)) {
+            nextVisible.add(trace);
+        }
+    }
+    visibleStackTraces.forEach(function (trace) {
+        if (nextVisible.has(trace)) {
+            return;
+        }
+        trace.div.style.visibility = "collapse";
+    });
+    nextVisible.forEach(function (trace) {
+        var div = trace.div, leftPx = trace.leftPx, rightPx = trace.rightPx;
+        div.style.left = Math.max(-5, leftPx) + "px";
+        div.style.right = Math.max(-5, windowWidth - rightPx) + "px";
+        if (!visibleStackTraces.has(trace)) {
+            div.style.visibility = "visible";
+        }
+    });
+    visibleStackTraces = nextVisible;
+}
+function snap(px) {
+    return Math.floor(px) + 0.5;
+}
+function redrawBackground() {
+    rulerBackgroundPatternContext.fillStyle = "#DDD";
+    rulerBackgroundPatternContext.fillRect(0, 0, rulerBackgroundPattern.width, rulerBackgroundPattern.height);
+    timelineBackgroundPatternContext.fillStyle = "#FFF";
+    timelineBackgroundPatternContext.fillRect(0, 0, timelineBackgroundPattern.width, timelineBackgroundPattern.height);
+    rulerBackgroundPatternContext.lineWidth = 1;
+    rulerBackgroundPatternContext.strokeStyle = "#BBB";
+    rulerBackgroundPatternContext.beginPath();
+    rulerBackgroundPatternContext.moveTo(snap(0), 0);
+    rulerBackgroundPatternContext.lineTo(snap(0), rulerBackgroundPattern.height);
+    rulerBackgroundPatternContext.stroke();
+    timelineBackgroundPatternContext.lineWidth = 1;
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    timelineBackgroundPatternContext.beginPath();
+    timelineBackgroundPatternContext.moveTo(snap(0), 0);
+    timelineBackgroundPatternContext.lineTo(snap(0), timelineBackgroundPattern.height);
+    timelineBackgroundPatternContext.stroke();
+    // timeline horizontal lines
+    timelineBackgroundPatternContext.lineWidth = 1;
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    timelineBackgroundPatternContext.beginPath();
+    timelineBackgroundPatternContext.moveTo(0, snap(timelineBackgroundPattern.height - 1));
+    timelineBackgroundPatternContext.lineTo(timelineBackgroundPattern.width, snap(timelineBackgroundPattern.height - 1));
+    timelineBackgroundPatternContext.stroke();
+    rulerBackgroundPatternContext.strokeStyle = "#CCC";
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    for (var i = 1; i < 10; i++) {
+        var x = rulerBackgroundPattern.width / 1000 * i * 100;
+        rulerBackgroundPatternContext.beginPath();
+        rulerBackgroundPatternContext.moveTo(snap(x), rulerBackgroundPattern.height - rulerBackgroundPattern.height * 0.25);
+        rulerBackgroundPatternContext.lineTo(snap(x), rulerBackgroundPattern.height);
+        rulerBackgroundPatternContext.stroke();
+        timelineBackgroundPatternContext.beginPath();
+        timelineBackgroundPatternContext.moveTo(snap(x), 0);
+        timelineBackgroundPatternContext.lineTo(snap(x), timelineBackgroundPattern.height);
+        timelineBackgroundPatternContext.stroke();
+    }
+    var rulerOffset = -Math.round((left - Math.floor(left / 1000) * 1000) * pixelPerMs);
+    var rulerPattern = context.createPattern(rulerBackgroundPattern, "repeat");
+    context.fillStyle = rulerPattern;
+    context.translate(rulerOffset, 0);
+    context.fillRect(-rulerOffset, 0, background.width, 30);
+    context.translate(-rulerOffset, 0);
+    var timelinePattern = context.createPattern(timelineBackgroundPattern, "repeat");
+    context.fillStyle = timelinePattern;
+    context.translate(rulerOffset, 31);
+    context.fillRect(-rulerOffset, 0, background.width, background.height - 30);
+    context.translate(-rulerOffset, -31);
+    // Separators
+    context.lineWidth = 1;
+    context.strokeStyle = "#666";
+    context.beginPath();
+    context.moveTo(0, snap(30));
+    context.lineTo(background.width, snap(30));
+    context.stroke();
+}
+function resize() {
+    background.width = window.innerWidth;
+    background.height = window.innerHeight;
+}
+function resizeRulers() {
+    // Lets try major rules on seconds and minor rules on 100ms.
+    var width = 1000 * pixelPerMs;
+    rulerBackgroundPattern.width = width;
+    rulerBackgroundPattern.height = 30;
+    timelineBackgroundPattern.width = width;
+    timelineBackgroundPattern.height = 21;
+}
+function clampViewPort() {
+    pixelPerMs = Math.max(window.innerWidth / (max - min), pixelPerMs);
+    left = Math.min(Math.max(min, left), max - window.innerWidth / pixelPerMs);
+}
+function focusTrace(ev) {
+    if (suspendClicks) {
+        return;
+    }
+    var trace = this.trace;
+    pixelPerMs = window.innerWidth / (trace.to - trace.from);
+    left = trace.from;
+    clampViewPort();
+    resizeRulers();
+    redrawBackground();
+    updateStackTraces();
+}
+window.addEventListener("resize", function () {
+    resize();
+    resizeRulers();
+    clampViewPort();
+    updateStackTraces();
+    redrawBackground();
+});
+window.addEventListener("mousewheel", function (e) {
+    var mousePoint = left + e.clientX / pixelPerMs;
+    pixelPerMs = Math.pow(2, Math.log2(pixelPerMs) + Math.max(-0.25, Math.min(0.25, e.wheelDelta)));
+    left = mousePoint - e.clientX / pixelPerMs;
+    lowLOD();
+    clampViewPort();
+    resizeRulers();
+    redrawBackground();
+    updateStackTraces();
+});
+var dragging = false;
+var suspendClicks = false;
+var mouseDown = false;
+var dragOriginXms; // The millisecond at which the chart was grabbed
+var dragOriginXpx;
+window.addEventListener("mousedown", function (e) {
+    dragOriginXms = left + e.clientX / pixelPerMs;
+    dragOriginXpx = e.clientX;
+    mouseDown = true;
+}, true);
+window.addEventListener("mouseup", function (e) {
+    if (dragging) {
+        dragging = false;
+        // Cant find a way to prevent the click action
+        suspendClicks = true;
+        setTimeout(function () { return suspendClicks = false; }, 1);
+    }
+    mouseDown = false;
+});
+window.addEventListener("mousemove", function (e) {
+    if (mouseDown && !dragging && Math.abs(e.clientX - dragOriginXpx) > 8) {
+        dragging = true;
+    }
+    if (dragging) {
+        left = dragOriginXms - e.clientX / pixelPerMs;
+        lowLOD();
+        clampViewPort();
+        redrawBackground();
+        updateStackTraces();
+    }
+});
+clampViewPort();
+resize();
+resizeRulers();
+redrawBackground();
+updateStackTraces();
+
+  </script>
+</body>
+</html>

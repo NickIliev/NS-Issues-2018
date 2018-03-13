@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profiling</title>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.trace {
+    position: absolute;
+    border: 1px solid black;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #DDD;
+    cursor: default;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.trace.Modules {
+    background-color: #BFF;
+}
+.trace.Runtime {
+    background-color: #FFB;
+}
+.trace:hover {
+    background-color: #FFF;
+    border-color: orange;
+    z-index: 1;
+    box-shadow: 0px 1px 5px black;
+}
+</style>
+</head>
+<body>
+  <script>
+var timeline = [{"domain":"Runtime","name":"Extracting assets","from":1520932713978,"to":1520932714065},{"domain":"Runtime","name":"Runtime.init","from":1520932714070,"to":1520932714098},{"domain":"Runtime","name":"LoadModule /data/data/org.nativescript.baseTscApp/files/app/tns-java-classes.js","from":1520932714103.345,"to":1520932714190.468},{"domain":"Runtime","name":"RequireCallback /data/data/org.nativescript.baseTscApp/files/app/tns-java-classes.js","from":1520932714103.059,"to":1520932714190.565},{"domain":"Runtime","name":"Load","from":1520932714100.256,"to":1520932714190.591},{"domain":"Runtime","name":"RuntimeHelper.initRuntime","from":1520932713946,"to":1520932714190},{"domain":"Runtime","name":"Runtime.run","from":1520932714190,"to":1520932714206},{"domain":"Runtime","name":"NativeScriptApplication.onCreate","from":1520932713945,"to":1520932714206},{"domain":"Modules","name":"setThemeOnLaunch [object Object]","from":1520932714241,"to":1520932714283},{"domain":"Modules","name":"notifyActivityCreated [object Object]","from":1520932714284,"to":1520932714284},{"domain":"Runtime","name":"Materizlizing class: android/view/View","from":1520932714324.026,"to":1520932714348.359},{"domain":"Runtime","name":"Materizlizing class: android/view/ViewGroup","from":1520932714324.012,"to":1520932714356.429},{"domain":"Runtime","name":"Materizlizing class: android/widget/FrameLayout","from":1520932714323.995,"to":1520932714356.954},{"domain":"Runtime","name":"Materizlizing class: com/android/internal/policy/DecorView","from":1520932714323.942,"to":1520932714357.82},{"domain":"Modules","name":"subscribeForGlobalLayout [object Object]","from":1520932714285,"to":1520932714361},{"domain":"Modules","name":"onActivityCreated com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520932714241,"to":1520932714361},{"domain":"Runtime","name":"MarkReachableObjects: com.tns.gen.android.app.Application_ActivityLifecycleCallbacks","from":1520932714413.87,"to":1520932714450.997},{"domain":"Runtime","name":"Materizlizing class: android/content/Intent","from":1520932714363.117,"to":1520932714457.694},{"domain":"Modules","name":"notifyLaunch [object Object]","from":1520932714457,"to":1520932714459},{"domain":"Modules","name":"loadModule [object Object]","from":1520932714466,"to":1520932714468},{"domain":"Modules","name":"t.readTextSync [object Object]","from":1520932714485,"to":1520932714489},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714498,"to":1520932714524},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714524,"to":1520932714524},{"domain":"Modules","name":"applyComponentCss [object Object]","from":1520932714524,"to":1520932714528},{"domain":"Modules","name":"t._addView Page(2)","from":1520932714532,"to":1520932714533},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714528,"to":1520932714535},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714497,"to":1520932714535},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714537,"to":1520932714539},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714539,"to":1520932714539},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714539,"to":1520932714540},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714537,"to":1520932714540},{"domain":"Modules","name":"t._addView Page(2)@file:///app/main-page.xml:1:1;","from":1520932714541,"to":1520932714542},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714543,"to":1520932714545},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714545,"to":1520932714545},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714545,"to":1520932714546},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714543,"to":1520932714546},{"domain":"Modules","name":"t._addView Page(2)@file:///app/main-page.xml:1:1;","from":1520932714546,"to":1520932714547},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714547,"to":1520932714559},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714559,"to":1520932714559},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714559,"to":1520932714560},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714547,"to":1520932714560},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932714560,"to":1520932714560},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714561,"to":1520932714565},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714565,"to":1520932714565},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714565,"to":1520932714572},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714561,"to":1520932714572},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932714572,"to":1520932714573},{"domain":"Modules","name":"createComponentInstance [object Object]","from":1520932714573,"to":1520932714573},{"domain":"Modules","name":"getComponentModuleExports [object Object]","from":1520932714573,"to":1520932714573},{"domain":"Modules","name":"applyComponentAttributes [object Object]","from":1520932714573,"to":1520932714576},{"domain":"Modules","name":"e.buildComponent [object Object]","from":1520932714573,"to":1520932714576},{"domain":"Modules","name":"t._addView StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932714576,"to":1520932714576},{"domain":"Modules","name":"viewFromBuilder [object Object]","from":1520932714468,"to":1520932714576},{"domain":"Modules","name":"createViewFromEntry [object Object]","from":1520932714461,"to":1520932714576},{"domain":"Runtime","name":"Extending: java/lang/Object","from":1520932714587.218,"to":1520932714742.41},{"domain":"Modules","name":"t._setupUI t(1)","from":1520932714577,"to":1520932714745},{"domain":"Modules","name":"e.onCreate [object Object]","from":1520932714241,"to":1520932714747},{"domain":"Modules","name":"initImageCache [object Object]","from":1520932714748,"to":1520932714766},{"domain":"Modules","name":"onActivityStarted com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520932714748,"to":1520932714767},{"domain":"Modules","name":"e.updateMatch t(1)._cssState","from":1520932714769,"to":1520932714770},{"domain":"Modules","name":"e.updateDynamicState t(1)._cssState","from":1520932714771,"to":1520932714772},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932714773,"to":1520932714773},{"domain":"Modules","name":"t.onLoaded t(1)","from":1520932714768,"to":1520932714773},{"domain":"Modules","name":"View.onLoaded t(1)","from":1520932714768,"to":1520932714774},{"domain":"Modules","name":"t.onLoaded t(1)","from":1520932714768,"to":1520932714774},{"domain":"Modules","name":"e.onStart [object Object]","from":1520932714748,"to":1520932714774},{"domain":"Modules","name":"onActivityResumed com.tns.gen.android.app.Application_ActivityLifecycleCallbacks@5ad6877","from":1520932714776,"to":1520932714776},{"domain":"Modules","name":"t.onNavigatingTo Page(2)@file:///app/main-page.xml:1:1;","from":1520932714813,"to":1520932714823},{"domain":"Runtime","name":"Extending: java/lang/Object","from":1520932714855.778,"to":1520932714999.968},{"domain":"Modules","name":"t._navigateCore t(1)","from":1520932714823,"to":1520932715005},{"domain":"Modules","name":"t.performNavigation t(1)","from":1520932714813,"to":1520932715005},{"domain":"Modules","name":"Displayed in 1231.00ms","from":1520932713813,"to":1520932715044},{"domain":"Modules","name":"e.onCreate [object Object]","from":1520932715046,"to":1520932715047},{"domain":"Modules","name":"Label.createNativeView Label(6)@file:///app/main-page.xml:8:9;","from":1520932715090,"to":1520932715111},{"domain":"Modules","name":"t._setupUI Label(6)@file:///app/main-page.xml:8:9;","from":1520932715090,"to":1520932715119},{"domain":"Runtime","name":"Extending: java/lang/Object","from":1520932715123.148,"to":1520932715283.211},{"domain":"Modules","name":"Button.createNativeView Button(7)@file:///app/main-page.xml:9:9;","from":1520932715120,"to":1520932715284},{"domain":"Modules","name":"t._setupUI Button(7)@file:///app/main-page.xml:9:9;","from":1520932715120,"to":1520932715290},{"domain":"Modules","name":"Label.createNativeView Label(8)@file:///app/main-page.xml:10:9;","from":1520932715290,"to":1520932715291},{"domain":"Modules","name":"t._setupUI Label(8)@file:///app/main-page.xml:10:9;","from":1520932715290,"to":1520932715294},{"domain":"Modules","name":"t._setupUI StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932715071,"to":1520932715294},{"domain":"Runtime","name":"ClassConstructorCallback","from":1520932715304.088,"to":1520932715321.969},{"domain":"Runtime","name":"Extending: java/lang/Object","from":1520932715322.441,"to":1520932715477.788},{"domain":"Modules","name":"t._setupUI ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520932715294,"to":1520932715483},{"domain":"Modules","name":"t._setupUI Page(2)@file:///app/main-page.xml:1:1;","from":1520932715057,"to":1520932715483},{"domain":"Modules","name":"e._createSelectors [object Object]","from":1520932715484,"to":1520932715498},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715484,"to":1520932715501},{"domain":"Modules","name":"e.updateMatch Page(2)@file:///app/main-page.xml:1:1;._cssState","from":1520932715484,"to":1520932715501},{"domain":"Modules","name":"e.updateDynamicState Page(2)@file:///app/main-page.xml:1:1;._cssState","from":1520932715501,"to":1520932715505},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715505,"to":1520932715517},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715517,"to":1520932715518},{"domain":"Modules","name":"e.updateMatch StackLayout(5)@file:///app/main-page.xml:7:5;._cssState","from":1520932715517,"to":1520932715518},{"domain":"Modules","name":"e.updateDynamicState StackLayout(5)@file:///app/main-page.xml:7:5;._cssState","from":1520932715518,"to":1520932715522},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715523,"to":1520932715526},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715526,"to":1520932715530},{"domain":"Modules","name":"e.updateMatch Label(6)@file:///app/main-page.xml:8:9;._cssState","from":1520932715526,"to":1520932715530},{"domain":"Modules","name":"e.updateDynamicState Label(6)@file:///app/main-page.xml:8:9;._cssState","from":1520932715530,"to":1520932715533},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715533,"to":1520932715548},{"domain":"Modules","name":"t.onLoaded Label(6)@file:///app/main-page.xml:8:9;","from":1520932715526,"to":1520932715549},{"domain":"Modules","name":"View.onLoaded Label(6)@file:///app/main-page.xml:8:9;","from":1520932715526,"to":1520932715549},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715549,"to":1520932715551},{"domain":"Modules","name":"e.updateMatch Button(7)@file:///app/main-page.xml:9:9;._cssState","from":1520932715549,"to":1520932715551},{"domain":"Runtime","name":"Extending: java/lang/Object","from":1520932715555.341,"to":1520932715784.562},{"domain":"Modules","name":"e.updateDynamicState Button(7)@file:///app/main-page.xml:9:9;._cssState","from":1520932715786,"to":1520932715795},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715796,"to":1520932715816},{"domain":"Modules","name":"t.onLoaded Button(7)@file:///app/main-page.xml:9:9;","from":1520932715549,"to":1520932715816},{"domain":"Modules","name":"View.onLoaded Button(7)@file:///app/main-page.xml:9:9;","from":1520932715549,"to":1520932715817},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715818,"to":1520932715818},{"domain":"Modules","name":"e.updateMatch Label(8)@file:///app/main-page.xml:10:9;._cssState","from":1520932715818,"to":1520932715818},{"domain":"Modules","name":"e.updateDynamicState Label(8)@file:///app/main-page.xml:10:9;._cssState","from":1520932715818,"to":1520932715819},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715819,"to":1520932715821},{"domain":"Modules","name":"t.onLoaded Label(8)@file:///app/main-page.xml:10:9;","from":1520932715818,"to":1520932715822},{"domain":"Modules","name":"View.onLoaded Label(8)@file:///app/main-page.xml:10:9;","from":1520932715817,"to":1520932715822},{"domain":"Modules","name":"t.onLoaded StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932715517,"to":1520932715822},{"domain":"Modules","name":"View.onLoaded StackLayout(5)@file:///app/main-page.xml:7:5;","from":1520932715517,"to":1520932715822},{"domain":"Modules","name":"e.matchSelectors [object Object]","from":1520932715823,"to":1520932715823},{"domain":"Modules","name":"e.updateMatch ActionBar(4)@file:///app/main-page.xml:3:9;._cssState","from":1520932715823,"to":1520932715823},{"domain":"Modules","name":"e.updateDynamicState ActionBar(4)@file:///app/main-page.xml:3:9;._cssState","from":1520932715823,"to":1520932715824},{"domain":"Modules","name":"\"properties\".initNativeView [object Object]","from":1520932715824,"to":1520932715833},{"domain":"Modules","name":"t.onLoaded ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520932715823,"to":1520932715833},{"domain":"Modules","name":"View.onLoaded ActionBar(4)@file:///app/main-page.xml:3:9;","from":1520932715823,"to":1520932715834},{"domain":"Modules","name":"t.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520932715484,"to":1520932715872},{"domain":"Modules","name":"View.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520932715484,"to":1520932715873},{"domain":"Modules","name":"Page.onLoaded Page(2)@file:///app/main-page.xml:1:1;","from":1520932715484,"to":1520932715873},{"domain":"Modules","name":"t._addView t(1)","from":1520932715056,"to":1520932715873},{"domain":"Modules","name":"e.onCreateView [object Object]","from":1520932715052,"to":1520932715873},{"domain":"Modules","name":"e.onCreateAnimator [object Object]","from":1520932715877,"to":1520932715877},{"domain":"Modules","name":"t.onNavigatedTo Page(2)@file:///app/main-page.xml:1:1;","from":1520932716211,"to":1520932716211},{"from":1520932713813,"to":1520932716211,"name":"ALL"}];
+var background = document.createElement('canvas');
+var context = background.getContext("2d");
+var rulerBackgroundPattern = document.createElement('canvas');
+var rulerBackgroundPatternContext = rulerBackgroundPattern.getContext("2d");
+var timelineBackgroundPattern = document.createElement('canvas');
+var timelineBackgroundPatternContext = timelineBackgroundPattern.getContext("2d");
+var chart = document.createElement('div');
+chart.id = "chart";
+chart.appendChild(background);
+var tracesDiv = document.createElement('div');
+tracesDiv.id = "traces";
+chart.appendChild(tracesDiv);
+document.body.appendChild(chart);
+function createStackTraces(traces) {
+    traces = traces.slice(0).sort(function (a, b) {
+        if (a.from < b.from) {
+            return -1;
+        }
+        else if (a.from === b.from) {
+            if (a.to > b.to) {
+                return -1;
+            }
+            else if (a.to === b.to) {
+                return 0;
+            }
+            else {
+                return 1;
+            }
+        }
+        else {
+            return 1;
+        }
+    });
+    var traceAtDepth = [];
+    var stackedTraces = traces.map(function (original) {
+        var from = original.from, to = original.to, name = original.name, domain = original.domain;
+        var trace = { from: from, to: to };
+        var depth;
+        for (var i = 0; i <= traceAtDepth.length; i++) {
+            if (traceAtDepth[i] === undefined || traceAtDepth[i].to <= from) {
+                depth = i;
+                traceAtDepth[i] = trace;
+                break;
+            }
+        }
+        var parent;
+        for (var i = depth - 1; i >= 0; i--) {
+            var potentialParent = traceAtDepth[i];
+            if (potentialParent.from <= trace.from && potentialParent.to >= trace.to) {
+                trace.parent = parent = potentialParent;
+                break;
+            }
+        }
+        var importance;
+        if (parent) {
+            // If it is very big, or very small - it does not matter, if it is about half its parent then it is important.
+            var ratio = (trace.to - trace.from) / (parent.to - parent.from);
+            importance = depth <= 1 ? 1 : 0.5 - Math.cos(2 * Math.PI * ratio) * 0.5;
+        }
+        else {
+            importance = 1;
+        }
+        var innerText = name + " " + Math.round(to - from) + "ms";
+        var title = name + " " + (to - from) + "ms " + importance;
+        var visible = false;
+        var div = document.createElement('div');
+        div.className = "trace " + domain;
+        tracesDiv.appendChild(div);
+        div.title = title;
+        div.innerText = innerText;
+        div.style.visibility = "hidden";
+        div.style.top = 30 + depth * 21 + "px";
+        div.addEventListener("click", focusTrace);
+        Object.assign(trace, { from: from, to: to, name: name, domain: domain, depth: depth, innerText: innerText, title: title, div: div, visible: visible, leftPx: 0, rightPx: 0, parent: parent, importance: importance });
+        div.trace = trace;
+        return trace;
+    }).sort(function (a, b) { return b.importance - a.importance; });
+    return stackedTraces;
+}
+var stackTraces = createStackTraces(timeline);
+var visibleStackTraces = new Set();
+var min = stackTraces.reduce(function (min, trace) { return Math.min(min, trace.from); }, Number.POSITIVE_INFINITY);
+var max = stackTraces.reduce(function (max, trace) { return Math.max(max, trace.to); }, Number.NEGATIVE_INFINITY);
+var left = min;
+var pixelPerMs = 0.0000001;
+var levelOfDetail = 0 /* High */;
+var debounceLODTimeout;
+function highLOD() {
+    if (debounceLODTimeout) {
+        clearTimeout(debounceLODTimeout);
+    }
+    levelOfDetail = 0 /* High */;
+    tracesDiv.style.pointerEvents = "auto";
+    updateStackTraces();
+}
+function lowLOD() {
+    levelOfDetail = 1 /* Low */;
+    if (debounceLODTimeout) {
+        clearTimeout(debounceLODTimeout);
+    }
+    debounceLODTimeout = setTimeout(highLOD, 1000);
+    tracesDiv.style.pointerEvents = "none";
+}
+function updateStackTraces() {
+    var windowWidth = window.innerWidth;
+    var right = left + (windowWidth / pixelPerMs);
+    var nextVisible = new Set();
+    var showTraces = levelOfDetail === 1 /* Low */ ? 64 : 512;
+    for (var i = 0; i < stackTraces.length && nextVisible.size < showTraces; i++) {
+        var trace = stackTraces[i];
+        trace.leftPx = (trace.from - left) * pixelPerMs;
+        trace.rightPx = (trace.to - left) * pixelPerMs;
+        if (trace.rightPx >= 0 && trace.leftPx <= windowWidth && (trace.rightPx - trace.leftPx >= 2)) {
+            nextVisible.add(trace);
+        }
+    }
+    visibleStackTraces.forEach(function (trace) {
+        if (nextVisible.has(trace)) {
+            return;
+        }
+        trace.div.style.visibility = "collapse";
+    });
+    nextVisible.forEach(function (trace) {
+        var div = trace.div, leftPx = trace.leftPx, rightPx = trace.rightPx;
+        div.style.left = Math.max(-5, leftPx) + "px";
+        div.style.right = Math.max(-5, windowWidth - rightPx) + "px";
+        if (!visibleStackTraces.has(trace)) {
+            div.style.visibility = "visible";
+        }
+    });
+    visibleStackTraces = nextVisible;
+}
+function snap(px) {
+    return Math.floor(px) + 0.5;
+}
+function redrawBackground() {
+    rulerBackgroundPatternContext.fillStyle = "#DDD";
+    rulerBackgroundPatternContext.fillRect(0, 0, rulerBackgroundPattern.width, rulerBackgroundPattern.height);
+    timelineBackgroundPatternContext.fillStyle = "#FFF";
+    timelineBackgroundPatternContext.fillRect(0, 0, timelineBackgroundPattern.width, timelineBackgroundPattern.height);
+    rulerBackgroundPatternContext.lineWidth = 1;
+    rulerBackgroundPatternContext.strokeStyle = "#BBB";
+    rulerBackgroundPatternContext.beginPath();
+    rulerBackgroundPatternContext.moveTo(snap(0), 0);
+    rulerBackgroundPatternContext.lineTo(snap(0), rulerBackgroundPattern.height);
+    rulerBackgroundPatternContext.stroke();
+    timelineBackgroundPatternContext.lineWidth = 1;
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    timelineBackgroundPatternContext.beginPath();
+    timelineBackgroundPatternContext.moveTo(snap(0), 0);
+    timelineBackgroundPatternContext.lineTo(snap(0), timelineBackgroundPattern.height);
+    timelineBackgroundPatternContext.stroke();
+    // timeline horizontal lines
+    timelineBackgroundPatternContext.lineWidth = 1;
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    timelineBackgroundPatternContext.beginPath();
+    timelineBackgroundPatternContext.moveTo(0, snap(timelineBackgroundPattern.height - 1));
+    timelineBackgroundPatternContext.lineTo(timelineBackgroundPattern.width, snap(timelineBackgroundPattern.height - 1));
+    timelineBackgroundPatternContext.stroke();
+    rulerBackgroundPatternContext.strokeStyle = "#CCC";
+    timelineBackgroundPatternContext.strokeStyle = "#EEE";
+    for (var i = 1; i < 10; i++) {
+        var x = rulerBackgroundPattern.width / 1000 * i * 100;
+        rulerBackgroundPatternContext.beginPath();
+        rulerBackgroundPatternContext.moveTo(snap(x), rulerBackgroundPattern.height - rulerBackgroundPattern.height * 0.25);
+        rulerBackgroundPatternContext.lineTo(snap(x), rulerBackgroundPattern.height);
+        rulerBackgroundPatternContext.stroke();
+        timelineBackgroundPatternContext.beginPath();
+        timelineBackgroundPatternContext.moveTo(snap(x), 0);
+        timelineBackgroundPatternContext.lineTo(snap(x), timelineBackgroundPattern.height);
+        timelineBackgroundPatternContext.stroke();
+    }
+    var rulerOffset = -Math.round((left - Math.floor(left / 1000) * 1000) * pixelPerMs);
+    var rulerPattern = context.createPattern(rulerBackgroundPattern, "repeat");
+    context.fillStyle = rulerPattern;
+    context.translate(rulerOffset, 0);
+    context.fillRect(-rulerOffset, 0, background.width, 30);
+    context.translate(-rulerOffset, 0);
+    var timelinePattern = context.createPattern(timelineBackgroundPattern, "repeat");
+    context.fillStyle = timelinePattern;
+    context.translate(rulerOffset, 31);
+    context.fillRect(-rulerOffset, 0, background.width, background.height - 30);
+    context.translate(-rulerOffset, -31);
+    // Separators
+    context.lineWidth = 1;
+    context.strokeStyle = "#666";
+    context.beginPath();
+    context.moveTo(0, snap(30));
+    context.lineTo(background.width, snap(30));
+    context.stroke();
+}
+function resize() {
+    background.width = window.innerWidth;
+    background.height = window.innerHeight;
+}
+function resizeRulers() {
+    // Lets try major rules on seconds and minor rules on 100ms.
+    var width = 1000 * pixelPerMs;
+    rulerBackgroundPattern.width = width;
+    rulerBackgroundPattern.height = 30;
+    timelineBackgroundPattern.width = width;
+    timelineBackgroundPattern.height = 21;
+}
+function clampViewPort() {
+    pixelPerMs = Math.max(window.innerWidth / (max - min), pixelPerMs);
+    left = Math.min(Math.max(min, left), max - window.innerWidth / pixelPerMs);
+}
+function focusTrace(ev) {
+    if (suspendClicks) {
+        return;
+    }
+    var trace = this.trace;
+    pixelPerMs = window.innerWidth / (trace.to - trace.from);
+    left = trace.from;
+    clampViewPort();
+    resizeRulers();
+    redrawBackground();
+    updateStackTraces();
+}
+window.addEventListener("resize", function () {
+    resize();
+    resizeRulers();
+    clampViewPort();
+    updateStackTraces();
+    redrawBackground();
+});
+window.addEventListener("mousewheel", function (e) {
+    var mousePoint = left + e.clientX / pixelPerMs;
+    pixelPerMs = Math.pow(2, Math.log2(pixelPerMs) + Math.max(-0.25, Math.min(0.25, e.wheelDelta)));
+    left = mousePoint - e.clientX / pixelPerMs;
+    lowLOD();
+    clampViewPort();
+    resizeRulers();
+    redrawBackground();
+    updateStackTraces();
+});
+var dragging = false;
+var suspendClicks = false;
+var mouseDown = false;
+var dragOriginXms; // The millisecond at which the chart was grabbed
+var dragOriginXpx;
+window.addEventListener("mousedown", function (e) {
+    dragOriginXms = left + e.clientX / pixelPerMs;
+    dragOriginXpx = e.clientX;
+    mouseDown = true;
+}, true);
+window.addEventListener("mouseup", function (e) {
+    if (dragging) {
+        dragging = false;
+        // Cant find a way to prevent the click action
+        suspendClicks = true;
+        setTimeout(function () { return suspendClicks = false; }, 1);
+    }
+    mouseDown = false;
+});
+window.addEventListener("mousemove", function (e) {
+    if (mouseDown && !dragging && Math.abs(e.clientX - dragOriginXpx) > 8) {
+        dragging = true;
+    }
+    if (dragging) {
+        left = dragOriginXms - e.clientX / pixelPerMs;
+        lowLOD();
+        clampViewPort();
+        redrawBackground();
+        updateStackTraces();
+    }
+});
+clampViewPort();
+resize();
+resizeRulers();
+redrawBackground();
+updateStackTraces();
+
+  </script>
+</body>
+</html>
