@@ -6,7 +6,7 @@
   "nativescript": {
     "id": "org.nativescript.baseNgApp",
     "tns-android": {
-      "version": "3.4.2"
+      "version": "4.0.0-2018.3.16.4"
     }
   },
   "dependencies": {
@@ -23,7 +23,7 @@
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.8",
     "rxjs": "^5.5.0",
-    "tns-core-modules": "3.4.1",
+    "tns-core-modules": "next",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -37,7 +37,7 @@
     "extract-text-webpack-plugin": "~3.0.2",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.6.0",
-    "nativescript-dev-webpack": "0.9.2",
+    "nativescript-dev-webpack": "next",
     "nativescript-worker-loader": "~0.8.1",
     "raw-loader": "~0.5.1",
     "resolve-url-loader": "~2.2.1",
