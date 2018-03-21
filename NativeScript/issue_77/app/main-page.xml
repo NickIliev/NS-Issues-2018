@@ -1,0 +1,12 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <StackLayout class="p-20">
+        <Label text="no-top-left radius" class="text-center no-top-left"/>
+        <Label text="no-top-left-right radius" class="text-center no-top-left-right"/>
+        <Label text="no-bottom-left radius" class="text-center no-bottom-left" />
+        <Label text="no-bottom-left-right radius" class="text-center no-bottom-left-right"/>
+        <Label text="allcorner radius" class="text-center yes-all"/>
+        <Label text="no radius corners" class="text-center no-all"/>
+    </StackLayout>
+</Page>

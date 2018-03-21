@@ -1,0 +1,36 @@
+﻿
+@import '~nativescript-theme-core/css/core.light.css';
+
+Label {
+    height: 60;
+    background-color: gray;
+    border-width: 5;
+    border-color: orangered;
+    color: white;
+    margin-top: 20;
+
+}
+
+.no-top-left {
+    border-radius: 0 20 20 20 ;
+}
+
+.no-top-left-right {
+    border-radius: 0 0 20 20;
+}
+
+.no-bottom-left {
+    border-radius: 20 20 20 0;
+}
+
+.no-bottom-left-right {
+    border-radius: 20 20 0 0;
+}
+
+.yes-all {
+    border-radius: 20;
+}
+
+.no-all {
+    border-radius: 0;
+}
