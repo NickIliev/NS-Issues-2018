@@ -7,6 +7,6 @@
         <Label text="border-radius: 20 20 20 0;" class="text-center no-bottom-left" />
         <Label text="border-radius: 20 20 0 0;" class="text-center no-bottom-left-right"/>
         <Label text="border-radius: 20;" class="text-center yes-all"/>
-        <Label text="nborder-radius: 0;" class="text-center no-all"/>
+        <Label text="border-radius: 0;" class="text-center no-all"/>
     </StackLayout>
 </Page>
