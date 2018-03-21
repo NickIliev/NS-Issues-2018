@@ -7,6 +7,9 @@
 		"id": "org.nativescript.issue77",
 		"tns-ios": {
 			"version": "4.0.0"
+		},
+		"tns-android": {
+			"version": "4.0.0-rc-2018.3.20.1"
 		}
 	},
 	"dependencies": {
@@ -14,6 +17,10 @@
 		"tns-core-modules": "~3.4.0"
 	},
 	"devDependencies": {
+		"babel-traverse": "6.26.0",
+		"babel-types": "6.26.0",
+		"babylon": "6.18.0",
+		"lazy": "1.0.11",
 		"nativescript-dev-typescript": "~0.6.0",
 		"typescript": "~2.4.2"
 	}
