@@ -1,0 +1,62 @@
+{
+	"description": "NativeScript Application",
+	"license": "SEE LICENSE IN <your-license-filename>",
+	"readme": "NativeScript Application",
+	"repository": "<fill-your-repository-here>",
+	"nativescript": {
+		"id": "org.nativescript.issue5580",
+		"tns-android": {
+			"version": "3.4.2"
+		}
+	},
+	"dependencies": {
+		"nativescript-appversion": "^1.3.3",
+		"nativescript-audio": "^4.0.3",
+		"nativescript-azure-mobile-apps": "^0.5.2",
+		"nativescript-barcodescanner": "^2.6.0",
+		"nativescript-camera": "^3.0.0",
+		"nativescript-carousel": "^2.3.1",
+		"nativescript-clipboard": "^1.1.5",
+		"nativescript-collapsing-header": "^2.0.0",
+		"nativescript-dialog": "0.1.0",
+		"nativescript-drop-down": "^3.2.0",
+		"nativescript-effects": "^0.3.0",
+		"nativescript-fancyalert": "^1.1.2",
+		"nativescript-feedback": "^1.0.5",
+		"nativescript-filterable-listpicker": "^1.0.5",
+		"nativescript-floatingactionbutton": "^2.2.7",
+		"nativescript-google-analytics": "^0.4.1",
+		"nativescript-https": "^1.0.1",
+		"nativescript-imagecropper": "0.0.7",
+		"nativescript-imagepicker": "^3.0.0",
+		"nativescript-intl": "0.0.6",
+		"nativescript-iqkeyboardmanager": "^1.0.1",
+		"nativescript-loading-indicator": "^2.3.2",
+		"nativescript-numeric-keyboard": "^3.0.2",
+		"nativescript-permissions": "^1.2.3",
+		"nativescript-pro-ui": "3.2.0",
+		"nativescript-pulltorefresh": "^1.1.9",
+		"nativescript-push-notifications": "0.0.19",
+		"nativescript-screen-orientation": "^2.0.0",
+		"nativescript-secure-storage": "^2.2.0",
+		"nativescript-slides": "^2.2.2",
+		"nativescript-snackbar": "^1.1.7",
+		"nativescript-social-share": "^1.3.1",
+		"nativescript-sound": "^1.0.4",
+		"nativescript-status-bar": "^1.1.1",
+		"nativescript-theme-core": "^0.1.2",
+		"nativescript-toast": "^1.4.6",
+		"nativescript-toolbox": "^1.49.1",
+		"nativescript-tooltip": "^2.1.2",
+		"nativescript-urlhandler": "^1.1.1",
+		"nativescript-vibrate": "^1.1.2",
+		"tns-core-modules": "^3.4.1"
+	},
+	"devDependencies": {
+		"babel-traverse": "6.16.0",
+		"babel-types": "6.16.0",
+		"babylon": "6.12.0",
+		"lazy": "1.0.11",
+		"shelljs": "^0.5.3"
+	}
+}
