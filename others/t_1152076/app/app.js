@@ -11,20 +11,31 @@ var application = require("application");
 // caling firebase.init atter applicaiton has stated (in main-page.js)
 exports.doInit = function () {
   firebase.init({
-    onMessageReceivedCallback: function (message) {
+    onMessageReceivedCallback:  (message) => {
       console.log("Title: " + message.title);
       console.log("Body: " + message.body);
- 
+
       alert("message.body" + message.body);
+    },
+    onPushTokenReceivedCallback: function(token) {
+      console.log("Firebase push token: " + token);
     }
   }).then(
-    function (instance) {
-      console.log("firebase.init done");
-    },
-    function (error) {
-      console.log("firebase.init error: " + error);
-    }
-  );
+      function (instance) {
+        console.log("firebase.init done");
+      },
+      function (error) {
+        console.log("firebase.init error: " + error);
+      }
+    );
+}
+
+exports.getToken = function() {
+  firebase.getCurrentPushToken().then((token) => {
+    // may be null if not known yet
+    console.log("Current push token: " + token);
+  });
+
 }
 
 application.start({ moduleName: "main-page" });

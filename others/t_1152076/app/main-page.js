@@ -12,12 +12,17 @@ JavaScript modules defined in other files.
 var createViewModel = require("./main-view-model").createViewModel;
 var firebase = require("nativescript-plugin-firebase");
 var doInit = require("./app").doInit;
+var getToken = require("./app").getToken;
 
 function onNavigatingTo(args) {
     var page = args.object;
     page.bindingContext = createViewModel();
 
     doInit();
+
+    setTimeout(() => {
+        getToken();
+    }, 300);
 }
 
 /*
