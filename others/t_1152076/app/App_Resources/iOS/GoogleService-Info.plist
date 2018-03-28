@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>344544956609-d0o8vdmg2ib7agb4r2o45sf7ha1ubct2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.344544956609-d0o8vdmg2ib7agb4r2o45sf7ha1ubct2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAsaG-S3yPm0hivGNjDZH0N3eKH_g3wS8g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>344544956609</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.nativescript.DansPushTest</string>
+	<key>PROJECT_ID</key>
+	<string>rapid-power-management-b49b3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rapid-power-management-b49b3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:344544956609:ios:5a68da9fdc7d3d88</string>
+	<key>DATABASE_URL</key>
+	<string>https://rapid-power-management-b49b3.firebaseio.com</string>
+</dict>
+</plist>
