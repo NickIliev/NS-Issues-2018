@@ -1,7 +1,8 @@
-<Page shownModally="onShownModally" loaded="loaded">
-    <ScrollView>
-        <StackLayout>
-            <DatePicker loaded="{{ onDatePickerLoaded }}" date="{{ date }}" verticalAlignment="middle" horizontalAlignment="center"/>
-     </StackLayout>
-    </ScrollView>
+<Page shownModally="onShownModally" navigatingTo="navigatingTo">
+	<ScrollView>
+		<StackLayout>
+			<Button text="setToday" tap="setToday" />
+			<DatePicker loaded="{{ onDatePickerLoaded }}" date="{{ date }}" verticalAlignment="middle" horizontalAlignment="center" />
+		</StackLayout>
+	</ScrollView>
 </Page>
