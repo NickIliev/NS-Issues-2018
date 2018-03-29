@@ -1,0 +1,7 @@
+<Page shownModally="onShownModally" loaded="loaded">
+    <ScrollView>
+        <StackLayout>
+            <DatePicker loaded="{{ onDatePickerLoaded }}" date="{{ date }}" verticalAlignment="middle" horizontalAlignment="center"/>
+     </StackLayout>
+    </ScrollView>
+</Page>
