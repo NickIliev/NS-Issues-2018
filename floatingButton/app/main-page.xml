@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:FAB="nativescript-floatingactionbutton" navigatingTo="onNavigatingTo" class="page">
+    <Page.actionBar>
+        <ActionBar title="My Apps" icon="res://icon" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout class="p-20">
+        <Label text="Tap the button" class="h1 text-center"/>
+        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+        <FAB:fab icon="res://icon" tap="{{ onTap }}" rippleColor="#f1f1f1"/>
+    </StackLayout>
+</Page>
