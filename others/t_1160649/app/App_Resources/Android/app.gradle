@@ -1,0 +1,23 @@
+// Add your native dependencies here:
+
+// Uncomment to add recyclerview-v7 dependency
+dependencies {
+	compile 'com.squareup.okhttp3:okhttp:3.5.0'
+}
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "org.nativescript.t1160649" 
+    
+    //override supported platforms
+    // ndk {
+    //       abiFilters.clear()
+    //   		abiFilters "armeabi-v7a"
+ 		// }
+  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 
