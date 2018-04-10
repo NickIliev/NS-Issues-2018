@@ -1,39 +1,38 @@
 import { Observable } from 'data/observable';
+import * as fs from "file-system";
+require("nativescript-nodeify");
 
 export class HelloWorldModel extends Observable {
 
-    private _counter: number;
-    private _message: string;
-
     constructor() {
         super();
-
-        // Initialize default values.
-        this._counter = 42;
-        this.updateMessage();
     }
 
-    get message(): string {
-        return this._message;
-    }
-    
-    set message(value: string) {
-        if (this._message !== value) {
-            this._message = value;
-            this.notifyPropertyChange('message', value)
-        }
-    }
+    nedbMemory() {
+        const Nedb = require('nedb');
+        const db = new Nedb({ autoload: true });
+        const doc = { foo: "bar" };
+        db.insert(doc, (err, newDoc) => {
+            console.log("err: " + err);
+            console.log("newDoc: " + JSON.stringify(newDoc));
+        });
+    };
 
-    public onTap() {
-        this._counter--;
-        this.updateMessage();
-    }
+    nedbFs() {
+        const Nedb = require('nedb');
+        const path = fs.knownFolders.documents().path + '/database.db';
 
-    private updateMessage() {
-        if (this._counter <= 0) {
-            this.message = 'Hoorraaay! You unlocked the NativeScript clicker achievement!';
-        } else {
-            this.message = `${this._counter} taps left`;
-        }
-    }
+        const db = new Nedb({
+            filename: path
+        });
+
+        db.loadDatabase((err) => {
+            // Now commands will be executed
+            const doc = { "foo": "bar" };
+            db.insert(doc, function (err, newDoc) {
+                console.log("err: " + err);
+                console.log("newDoc: " + JSON.stringify(newDoc));
+            });
+        });
+    };
 }
