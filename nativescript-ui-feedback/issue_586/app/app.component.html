@@ -1,0 +1,23 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<!-- <RadSideDrawer>
+    <GridLayout tkDrawerContent>
+        <Label text="Side Menu"></Label>
+    </GridLayout>
+
+    <page-router-outlet tkMainContent></page-router-outlet>
+</RadSideDrawer> -->
+
+
+<RadSideDrawer>
+    <StackLayout tkDrawerContent>
+        <Label text="First" marginTop="40"></Label>
+        <Label text="Second" marginTop="40"></Label>
+        <Label text="Third" marginTop="40"></Label>
+    </StackLayout>
+
+    <GridLayout tkMainContent>
+        <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+        <page-router-outlet></page-router-outlet>
+    </GridLayout>
+
+</RadSideDrawer>
