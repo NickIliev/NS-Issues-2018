@@ -1,0 +1,24 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+
+<StackLayout class="page">
+    <Carousel height="250" pageChanged="myChangeEvent" pageTapped="mySelectedEvent">
+        <CarouselItem id="slide1" verticalAlignment="center" backgroundColor="#b3cde0" height="250">
+            <Label text="Signup now and take advantege of this service!" verticalAlignment="center" horizontalAlignment="center"></Label>
+        </CarouselItem>
+        <CarouselItem id="slide2" verticalAlignment="center" backgroundColor="#6497b1" height="250">
+            <Label text="Still in doubt? Come on!" verticalAlignment="center" horizontalAlignment="center"></Label>
+        </CarouselItem>
+        <CarouselItem id="slide3" verticalAlignment="center" backgroundColor="#005b96" height="250">
+            <Label text="Signup now and I'll be your best friend!" verticalAlignment="center" horizontalAlignment="center"></Label>
+        </CarouselItem>
+    </Carousel>
+
+    <!-- <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView> -->
+</StackLayout>
