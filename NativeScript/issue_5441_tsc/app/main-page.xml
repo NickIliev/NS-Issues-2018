@@ -1,0 +1,20 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+
+<GridLayout rows="*" columns="*" backgroundColor="blue">
+    <ListView items="[1, 2, 3, 5, 8, 13, 21, 34]"  rowHeight="40">
+        <ListView.itemTemplate>
+            <StackLayout>
+                <Label text="Some Label" textWrap="true" height="40" backgroundColor="green" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</GridLayout>
+
+</Page>
