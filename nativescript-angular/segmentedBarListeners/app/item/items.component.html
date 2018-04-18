@@ -1,0 +1,42 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+
+<TabView class="tab-view page">
+    <StackLayout *tabItem="{title: 'Tab 1'}" (loaded)="onLoaded($event)" (unloaded)="onUnloaded($event)">
+
+        <GridLayout rows="auto, *, auto">
+            <SegmentedBar row="0" class="segmented-bar font-12" [items]="items" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
+    
+            <GridLayout row="1" rows="*" visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="gray">
+                <Label text="hi 1"></Label>
+            </GridLayout>
+
+            <!-- if we add visibility="{{ !isItemVisible ? 'visible' : 'collapsed' }}"  to the second Grid the app is crashing -->
+            <!-- same happens if we use two different boolean properties or of we use *ngIf-->
+            <GridLayout row="1" rows="*" visibility="{{ !isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="blue">
+                <Label text="hi 2"></Label>
+            </GridLayout>      
+            
+            <Button row="2" text="toggle" (tap)="toggle()"></Button> <!-- -Not working for the second Grid when inside TabView->
+        </GridLayout>
+
+    </StackLayout>
+
+    <StackLayout *tabItem="{title: 'Tab 2222'}"></StackLayout>
+</TabView>
+
+
+<!-- The same code without TabView is working as expected!!! -->
+<!-- <GridLayout rows="auto, *, auto">
+    <SegmentedBar row="0" class="segmented-bar font-12" [items]="items" (selectedIndexChange)="onSelectedIndexChange($event)"></SegmentedBar>
+
+    <GridLayout row="1" rows="*" visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="gray">
+        <Label text="hi 1"></Label>
+    </GridLayout>
+    <GridLayout row="1" rows="*" visibility="{{ !isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="blue">
+        <Label text="hi 2"></Label>
+    </GridLayout>      
+    
+    <Button row="2" text="toggle" (tap)="toggle()"></Button>
+</GridLayout> -->
