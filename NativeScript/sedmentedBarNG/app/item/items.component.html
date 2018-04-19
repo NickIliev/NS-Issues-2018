@@ -1,0 +1,10 @@
+<StackLayout class="page">
+    <SegmentedBar [items]="items" (loaded)="onBarLoaded($event)"></SegmentedBar>
+    <Button text="toggle" (tap)="toggle()"></Button>
+    <GridLayout rows="*" visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="red">
+        <Label text="Red Page"></Label>
+    </GridLayout>
+    <GridLayout rows="*" visibility="{{ !isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="green">
+        <Label text="Greeeeeen"></Label>
+    </GridLayout>
+</StackLayout>

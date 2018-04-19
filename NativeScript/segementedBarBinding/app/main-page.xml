@@ -1,0 +1,24 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout loaded="onLoaded" unloaded="onUnloaded" >
+        <!-- changing visibility via selectedIndexChange callback -->
+        <SegmentedBar loaded="onSegmentedBarLoaded" items="{{ segmentedBarItems }}"></SegmentedBar>
+
+        <!-- changing visibility via toogle func -->
+        <Button text="toggle" tap="toggle"></Button>
+        
+        <GridLayout rows="*" visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="red">
+            <Label text="Red Page"></Label>
+        </GridLayout>
+        <GridLayout rows="*" visibility="{{ !isItemVisible ? 'visible' : 'collapsed' }}" backgroundColor="green">
+            <Label text="Greeeeeen"></Label>
+        </GridLayout>
+    </StackLayout>
+
+</Page>
