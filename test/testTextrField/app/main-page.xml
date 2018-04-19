@@ -33,54 +33,6 @@
                         <StackLayout class="hr-light"></StackLayout>
                     </StackLayout>
 
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
-                    <StackLayout class="input-field" style="margin-top:15">
-                        <GridLayout columns="auto, *">
-                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
-                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
-                        </GridLayout>
-                        <StackLayout class="hr-light"></StackLayout>
-                    </StackLayout>
-
                     <StackLayout>
                         <Label color="red" id="errorInfo"></Label>
                     </StackLayout>
