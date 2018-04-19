@@ -1,0 +1,49 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <GridLayout class="page-content"  >
+        <ScrollView>  
+            <StackLayout margin="10" verticalAlignment="center">
+
+                <StackLayout >
+                    
+                        <Image src="~/images/profilemobile.png" height="50%" width="50%" style="backgroundColor:#80000000"/>
+                </StackLayout>
+
+                <StackLayout class="form" padding="15" >
+
+                    <StackLayout class="input-field">
+                        <GridLayout columns="auto, *">
+                            <Image row="0" col="0" src="~/images/usernameicon.png" height="10%" width="10%" />
+                            <TextField row="0" col="1" class="input" id="userName" style="color:white;text-align:center"></TextField>
+                        </GridLayout>
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+
+                    <StackLayout class="input-field" style="margin-top:15">
+                        <GridLayout columns="auto, *">
+                            <Image row="0" col="0" src="~/images/passwordbg.png" height="10%" width="10%"/>
+                            <TextField row="0" col="1" secure="true" class="input" id="password"  style="color:white;text-align:center"></TextField>
+                        </GridLayout>
+                        <StackLayout class="hr-light"></StackLayout>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Label color="red" id="errorInfo"></Label>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Button text="Login"  backgroundColor="#4bc2ff"  style="color:white;text-transform:uppercase;"  height="70" tap="sigIn"></Button>
+                    </StackLayout> 
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+     </GridLayout>
+
+</Page>

@@ -10,14 +10,24 @@ import { ItemService } from "./item.service";
 })
 export class ItemsComponent implements OnInit {
     items: Item[];
-
-    // This pattern makes use of Angular’s dependency injection implementation to inject an instance of the ItemService service into this class. 
-    // Angular knows about this service because it is included in your app’s main NgModule, defined in app.module.ts.
     constructor(private itemService: ItemService) { }
 
+    
     ngOnInit(): void {
-        debugger;
+        // using the debugger statement to force a breakpoint and from here using F10
+        // however any changed during debug won't be transpiled to JavaScript so the app has to be rebuild
+        // using debugger' along with "stopOnEntry": true in launch.json is resolving some of the issues
+
+        // debugger; 
         console.log("ngOnInit");
         this.items = this.itemService.getItems();
+    }
+
+    ngAfterViewInit() {
+        console.log("ngAfterViewInit");
+    }
+
+    ngAfterViewChecked() {
+        console.log("ngAfterViewChecked");
     }
 }
