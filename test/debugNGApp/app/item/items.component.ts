@@ -14,8 +14,10 @@ export class ItemsComponent implements OnInit {
 
     
     ngOnInit(): void {
-        // using the debugger stamtement to force a breakpoint and from here using F10
+        // using the debugger statement to force a breakpoint and from here using F10
         // however any changed during debug won't be transpiled to JavaScript so the app has to be rebuild
+        // using debugger' along with "stopOnEntry": true in launch.json is resolving some of the issues
+
         // debugger; 
         console.log("ngOnInit");
         this.items = this.itemService.getItems();
