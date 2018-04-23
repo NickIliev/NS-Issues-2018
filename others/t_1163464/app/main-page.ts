@@ -3,9 +3,6 @@ import { Page } from 'ui/page';
 import { Color } from "color";
 const PhotoViewer = require("nativescript-photoviewer");
 
-declare let UIView: any;
-declare let MBProgressHUDModeDeterminate: any;
-
 var imageFromURL3 = "https://apod.nasa.gov/apod/image/1804/IC4592_WiseAntonucci_5000.jpg";
 var imageFromURL4 = "https://apod.nasa.gov/apod/image/1804/LyridCrater_Goldpaint_1920.jpg";
 var imageFromURL1 = "https://apod.nasa.gov/apod/image/1804/FalconTessLaunchKraus.jpg";
