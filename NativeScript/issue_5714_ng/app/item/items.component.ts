@@ -22,9 +22,11 @@ export class ItemsComponent implements OnInit {
         this.items = this.itemService.getItems();
 
         let connectionType = getConnectionType();
+        console.log(connectionType);
         switch (connectionType) {
             case 0:
                 this.connectionType = "None";
+                
                 break;
             case 1:
                 this.connectionType = "Wi-Fi";

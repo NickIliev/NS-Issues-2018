@@ -1,0 +1,54 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Login"></Label>
+</ActionBar>
+
+<GridLayout xmlns:CheckBox="nativescript-checkbox" id="example-background" (loaded)="onBackgroundLoaded($event)"> 
+    <GridLayout id="form-content" class="form-content rounded" rows="auto, *, auto, auto, auto" >
+
+        <StackLayout class="top-border" row="0"></StackLayout>
+
+        <ScrollView row="1" class="fields-section ">
+            <StackLayout class="userpwcontainer">
+                
+                <GridLayout ios:columns="auto, *" android:rows="auto, auto" verticalAlignment="top" >
+                    <Label text="Username" class="field-title" ></Label>
+                    <GridLayout columns="*, 25" row="2" >
+                        <TextField #username  text="username" class="field" ios:col="1" android:row="1"></TextField>
+                        <Label text="fonticon" class="fa" col='1' ></Label>
+                    </GridLayout>
+                </GridLayout>
+
+                <StackLayout class="line"></StackLayout>
+                <GridLayout ios:columns="auto,*" android:rows="auto, auto" verticalAlignment="top">
+                    <Label text="Password" class="field-title"></Label>
+                    <GridLayout columns="*,25" row="2" >
+                        <TextField  #password id="password" text="pass" secure="true" class="field"  ios:col="1" android:row="1"  ></TextField>
+                        <Label text="fonticon" class="fa" col='1' ></Label>
+                    </GridLayout>
+                    
+                </GridLayout> 
+                <StackLayout class="line"></StackLayout>
+                <Label text="status" row="3" class="statusupdate" ></Label>
+                <Button text="Login" isEnabled="true"  class="btn btn-primary btn-active login" row="4"></Button>
+                <Button *ngIf=canloginDisconnected text="Login Disconnected" isEnabled="{{!isbusy}}"  class="btn btn-primary btn-active login" row="4"></Button>
+                <ActivityIndicator row="5" #activityIndicator busy="true"  width="50" height="50" class="activity-indicator"></ActivityIndicator>
+                
+            </StackLayout> 
+        </ScrollView>  
+
+        <StackLayout row="2">
+                <Button text="Clear" class="btn btn-primary btn-active clear" ></Button>
+        </StackLayout>
+
+        <StackLayout row="3" class="bottomStack">
+                <!-- <CheckBox #disconnected text="Login Disconnected" checked="{{loginDisconnected}}"></CheckBox> -->
+                <StackLayout  orientation="horizontal">
+                <CheckBox #cbLocal text="LOCALHOST" checked="true" boxType="circle" ></CheckBox>
+                <CheckBox #cbDev text="DEV" checked="false" boxType="circle" ></CheckBox>
+                <CheckBox #cbProd text="PROD" checked="false" boxType="circle" ></CheckBox>
+            </StackLayout>
+        </StackLayout>
+    </GridLayout> 
+    <Image id="image" src="res://msilogo" class="profile-picture" tap="onProfilePictureTapped"></Image>
+</GridLayout>
+

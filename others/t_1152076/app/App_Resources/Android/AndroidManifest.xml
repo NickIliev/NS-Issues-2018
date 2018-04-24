@@ -32,7 +32,6 @@
 			android:theme="@style/LaunchScreenTheme">
 
 			<meta-data android:name="SET_THEME_ON_LAUNCH" android:resource="@style/AppTheme" />
-			<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/opportuity" />
 
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -51,5 +50,6 @@
 				<action android:name="com.google.firebase.MESSAGING_EVENT"/>
 			</intent-filter>
 		</service>
+		<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/opportuity"/>
 	</application>
 </manifest>

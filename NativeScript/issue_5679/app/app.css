@@ -1,0 +1,32 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+
+ActionBar {
+    background-color: #3d5afe;
+    color: #FFFFFF;
+}
+
+
+.actionbar-title {
+    color: #FFFFFF;
+}
+
+
+.android .actionbar-title {
+    horizontal-align: left;
+    font-size: 20;
+}
+
+
+.ios .actionbar-title {
+    horizontal-align: center;
+    font-size: 17;
+    font-weight: bold;
+}
+
+
+.filter-searchbar {
+    background-color: #3d5afe;
+    color: #FFFFFF;
+    min-width: 200;
+    margin-right: 10;
+}

@@ -40,6 +40,14 @@ export class ItemsComponent implements OnInit {
         console.log(this.isItemVisible);
     }
 
+    onBarLoaded(args) {
+        console.log("SegmentedBar loaded");
+    }
+
+    onBarUnloaded(args) {
+        console.log("SegmentedBar unloaded");
+    }
+
     private createSegmentedBarItems() {
         let segmentedBarItems = [];
         let tab1 = <SegmentedBarItem>new SegmentedBarItem();

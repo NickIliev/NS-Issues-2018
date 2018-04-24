@@ -1,12 +1,12 @@
 
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
 
-    <StackLayout class="p-20">
-        <Label text="border-radius: 0 20 20 20;" class="text-center no-top-left"/>
-        <Label text="border-radius: 0 0 20 20;" class="text-center no-top-left-right"/>
-        <Label text="border-radius: 20 20 20 0;" class="text-center no-bottom-left" />
-        <Label text="border-radius: 20 20 0 0;" class="text-center no-bottom-left-right"/>
-        <Label text="border-radius: 20;" class="text-center yes-all"/>
-        <Label text="border-radius: 0;" class="text-center no-all"/>
-    </StackLayout>
+<StackLayout class="p-20">
+    <Label text="border-radius: 0 20 20 20;" class="text-center no-top-left"/>
+    <Label text="border-radius: 0 0 20 20;" class="text-center no-top-left-right"/>
+    <Label text="border-radius: 20 20 20 0;" class="text-center no-bottom-left" />
+    <Label text="border-radius: 20 20 0 0;" class="text-center no-bottom-left-right"/>
+    <Label text="border-radius: 20;" class="text-center yes-all"/>
+    <Label text="border-radius: 0;" class="text-center no-all"/>
+</StackLayout>
 </Page>

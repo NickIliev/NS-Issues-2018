@@ -6,7 +6,10 @@
 	"nativescript": {
 		"id": "org.nativescript.issue5441",
 		"tns-ios": {
-			"version": "4.0.0-2018-02-15-02"
+			"version": "4.0.1"
+		},
+		"tns-android": {
+			"version": "4.0.1"
 		}
 	},
 	"dependencies": {
@@ -19,14 +22,18 @@
 		"@angular/platform-browser": "~5.2.0",
 		"@angular/platform-browser-dynamic": "~5.2.0",
 		"@angular/router": "~5.2.0",
-		"nativescript-angular": "next",
+		"nativescript-angular": "5.3.0",
 		"nativescript-theme-core": "~1.0.4",
 		"reflect-metadata": "~0.1.8",
 		"rxjs": "~5.5.2",
-		"tns-core-modules": "next",
+		"tns-core-modules": "4.0.0",
 		"zone.js": "~0.8.2"
 	},
 	"devDependencies": {
+		"babel-traverse": "6.26.0",
+		"babel-types": "6.26.0",
+		"babylon": "6.18.0",
+		"lazy": "1.0.11",
 		"nativescript-dev-typescript": "~0.6.0",
 		"typescript": "~2.6.2"
 	}

@@ -11,7 +11,7 @@
     <ListView items="[1, 2, 3, 5, 8, 13, 21, 34]"  rowHeight="40">
         <ListView.itemTemplate>
             <StackLayout>
-                <Label text="Some Label" textWrap="true" height="40" backgroundColor="green" />
+                <Label text="Some Label" textWrap="true" backgroundColor="green" />
             </StackLayout>
         </ListView.itemTemplate>
     </ListView>

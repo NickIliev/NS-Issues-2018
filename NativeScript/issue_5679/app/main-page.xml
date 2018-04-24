@@ -1,0 +1,22 @@
+
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar className="actionbar">
+            <GridLayout columns="*">
+                <Label text="ActionBar Title" className="actionbar-title" visibility="{{ searchbarVisible ? 'collapse' : 'visible' }}"/>
+                <SearchBar loaded="onSearchBarLoaded" clear="onSearchBarCleared" className="filter-searchbar" text="{{ filter }}" hint="Filter..." visibility="{{ !searchbarVisible ? 'collapse' : 'visible' }}"/>
+            </GridLayout>
+            <ActionItem text="Filter" android.position="actionBar" ios.position="right" icon="res://icon" tap="showSearchbar"
+                        visibility="{{ searchbarVisible ? 'collapse' : 'visible' }}"/>
+            <ActionItem text="Test" tap="test" android.position="popup" ios.position="right"/>
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <Label text="Tap the button" class="h1 text-center"/>
+        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+</Page>

@@ -10,8 +10,7 @@ export class HelloWorldModel extends Observable {
         super();
         this.list = new ObservableArray();
         this.sse = new SSE('http://localhost:8000', { 'X-Token': 'Test1234' });
-        console.log("Observable this.sse", this.sse);
-
+ 
         this.sse.events.on('onConnect', data => {
             console.log("onConnect");
             console.log(data.object.connected);
