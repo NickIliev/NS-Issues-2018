@@ -1,9 +1,18 @@
 ﻿@import '~nativescript-theme-core/css/core.light.css';
 @import "~animate.css/animate.min.css";
 
+/* the aniumation pulse comes from animate.css plugin but the same is reporducible with the keygframe beolow (from NativeScript docs) */
 .breath {
     animation-name: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
+}
+
+@keyframes my-anime {
+    0%   { background-color: red; transform: translate(0, 0); }
+    25%  { background-color: yellow; transform: translate(200, 0); }
+    50%  { background-color: blue; transform: translate(200, 200);  }
+    75%  { background-color: green; transform: translate(0, 200); }
+    100% { background-color: red; transform: translate(0, 0); }
 }
