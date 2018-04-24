@@ -1,0 +1,9 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+@import "~animate.css/animate.min.css";
+
+.breath {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
