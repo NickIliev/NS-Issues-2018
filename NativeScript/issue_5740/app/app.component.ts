@@ -5,7 +5,10 @@ import { Component } from "@angular/core";
   template: `
     <ActionBar title="My App" class="action-bar"></ActionBar>
     <!-- Your UI components go here -->
-    <Label text="some text"></Label>
+    <StackLayout>
+      <Label text="some text"></Label>
+      <Label text="some text"></Label>
+    </StackLayout>
   `
 })
 export class AppComponent {
