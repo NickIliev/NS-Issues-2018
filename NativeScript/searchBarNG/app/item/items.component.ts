@@ -26,4 +26,8 @@ export class ItemsComponent implements OnInit {
     onSubmit() {
         console.log("onSubmit");
     }
+
+    onTextChange() {
+        console.log("onTextChange");
+    }
 }
