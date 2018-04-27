@@ -5,7 +5,7 @@
 
 <TabView selectedIndex="0">
 	<StackLayout *tabItem="{title: 'NativeScript'}">
-		<SearchBar id="searchBar" hint="Search" text="" (clear)="onClear" (submit)="onSubmit" class="search-bar"></SearchBar>
+		<SearchBar id="searchBar" hint="Search" [(ngModel)]="someProp" (clear)="onClear()" (submit)="onSubmit()" class="search-bar"></SearchBar>
 	</StackLayout>
 	<StackLayout *tabItem="{title: 'Icon'}">
 		<TextField hint="" text="" (textChange)="onTextChange()"></TextField>
