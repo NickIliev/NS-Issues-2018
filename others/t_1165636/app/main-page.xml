@@ -5,9 +5,33 @@
         </ActionBar>
     </Page.actionBar>
 
-    <StackLayout class="p-20">
+    <!-- <StackLayout class="p-20">
         <Label text="&#xf111; Tap the button" class="fa" marginBottom="10"/>
         <Label text="{{ '&#xf111; ' +  longtext }}" class="fa" textWrap="true" marginBottom="10"/>
         <Label text="{{ bullet + ' ' +  message }}" class="fa" textWrap="true" marginBottom="10"/>
+    </StackLayout> -->
+
+<StackLayout>
+
+    <StackLayout orientation="horizontal">
+        <Label text="&#xf111;" class="fa" verticalAlignment="top" marginTop="10" marginLeft="10"/>
+        <Label text="Tap the button" class="content" textWrap="true"  marginLeft="10"/>
     </StackLayout>
+
+    <StackLayout orientation="horizontal">
+        <Label text="&#xf111;" class="fa" verticalAlignment="top" marginTop="10" marginLeft="10"/>
+        <Label text="{{ longtext }}" class="content" textWrap="true"  marginLeft="10"/>
+    </StackLayout>
+
+    <StackLayout orientation="horizontal">
+        <Label text="&#xf111;" class="fa" verticalAlignment="top" marginTop="10" marginLeft="10"/>
+        <Label text="{{ message }}" class="content" textWrap="true"  marginLeft="10"/>
+    </StackLayout>
+
+    <StackLayout orientation="horizontal">
+        <Label text="&#xf111;" class="fa" verticalAlignment="top" marginTop="10" marginLeft="10"/>
+        <Label text="{{ longtext }}" class="content" textWrap="true" marginLeft="10"/>
+    </StackLayout>
+    
+</StackLayout>
 </Page>
