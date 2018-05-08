@@ -1,0 +1,15 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <StackLayout horizontalAlignment="left">
+            <Label text="{{ message }}" textWrap="true" textAlignment="left"/>
+        </StackLayout>
+        <Slider minValue="0" maxValue="5000" value="{{ message }}" />
+    </StackLayout>
+</Page>
