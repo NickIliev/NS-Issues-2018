@@ -1,0 +1,11 @@
+
+
+    <StackLayout backgroundColor="lightGreen"   shownModally="onShowingModally"
+                                                loaded="onLoaded"
+                                                navigatingTo="onNavigatingTo" 
+                                                navigatingFrom="onNavigatingFrom"
+                                                navigatedTo="onNavigatedTo"
+                                                navigatedFrom="onNavigatedFrom">
+        <Label class="action-bar-title" text="SECOND MODAL"></Label>
+        <Button text="Close modal" tap="onCloseModal" class="btn btn-primary btn-active"/>
+    </StackLayout>
