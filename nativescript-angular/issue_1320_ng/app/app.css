@@ -1,0 +1,7 @@
+
+@import '~nativescript-theme-core/css/core.light.css';
+
+.item-selected {
+    border-width: 1;
+    border-color: #0063a4;
+}

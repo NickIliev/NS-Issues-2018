@@ -1,0 +1,9 @@
+
+
+<GridLayout class="page">
+    <ListView [items]="items" (itemTap)="onItemTap($event)" >
+        <ng-template let-item="item">
+            <Label [id]="item.id" [text]="item.Description" textWrap="true" margin="10"></Label>
+        </ng-template>
+    </ListView>
+</GridLayout>
